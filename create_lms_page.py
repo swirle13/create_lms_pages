@@ -34,6 +34,7 @@ pprinter = CustomPrettyPrinter(exclude_attr=exclude_icon)
 
 @dataclass
 class LmsItem:
+  '''Intermediary object to hold LMS item data before creating new ItemProperties object.'''
   buy_limit: Optional[int]
   cost: int
   highalch: int
@@ -77,12 +78,12 @@ def fetch_stats(name: str) -> ItemProperties:
   print()
 
 
-def create_lms_item(original: ItemProperties):  # TODO: add args 
+def create_lms_item(original_item: ItemProperties, lms_item: LmsItem) -> ItemProperties:
   '''Create a new LMS variant of an item, given an existing ItemProperties obj.'''
-  lms_object = replace(original,
-                       members=False,
-                       wiki_name=original.wiki_name + " (Last Man Standing)",
-                       wiki_url=original.wiki_url + "_(Last_Man_Standing)",
+  lms_object = replace(original_item,
+                       wiki_name=original_item.wiki_name + " (Last Man Standing)",
+                       wiki_url=original_item.wiki_url + "_(Last_Man_Standing)",
+                       **lms_item
                       )
 
 
@@ -608,9 +609,9 @@ lms_items_without_wiki_page = {
   },
   'Mithril gloves': {
     'buy_limit': None,
-    'cost': 0,
+    'cost': 350,  # not sure MOID is correct here
     'highalch': 0,
-    'id': 0,
+    'id': 20581,
     'linked_id_noted': 0,
     'linked_id_placeholder': None,
     'lowalch': 0,
@@ -621,9 +622,9 @@ lms_items_without_wiki_page = {
   },
   'Mystic robe bottom (dark)': {
     'buy_limit': None,
-    'cost': 0,
+    'cost': 1,
     'highalch': 0,
-    'id': 0,
+    'id': 27159,
     'linked_id_noted': 0,
     'linked_id_placeholder': None,
     'lowalch': 0,
@@ -634,9 +635,9 @@ lms_items_without_wiki_page = {
   },
   'Mystic robe bottom (light)': {
     'buy_limit': None,
-    'cost': 0,
+    'cost': 1,
     'highalch': 0,
-    'id': 0,
+    'id': 27161,
     'linked_id_noted': 0,
     'linked_id_placeholder': None,
     'lowalch': 0,
@@ -647,9 +648,9 @@ lms_items_without_wiki_page = {
   },
   'Mystic robe top (dark)': {
     'buy_limit': None,
-    'cost': 0,
+    'cost': 1,
     'highalch': 0,
-    'id': 0,
+    'id': 27158,
     'linked_id_noted': 0,
     'linked_id_placeholder': None,
     'lowalch': 0,
@@ -660,9 +661,9 @@ lms_items_without_wiki_page = {
   },
   'Mystic robe top (light)': {
     'buy_limit': None,
-    'cost': 0,
+    'cost': 1,
     'highalch': 0,
-    'id': 0,
+    'id': 27160,
     'linked_id_noted': 0,
     'linked_id_placeholder': None,
     'lowalch': 0,
@@ -673,9 +674,9 @@ lms_items_without_wiki_page = {
   },
   'Necklace of anguish': {
     'buy_limit': None,
-    'cost': 0,
+    'cost': 10,
     'highalch': 0,
-    'id': 0,
+    'id': 27172,
     'linked_id_noted': 0,
     'linked_id_placeholder': None,
     'lowalch': 0,
@@ -686,9 +687,9 @@ lms_items_without_wiki_page = {
   },
   'Opal dragon bolts (e)': {
     'buy_limit': None,
-    'cost': 0,
+    'cost': 1,
     'highalch': 0,
-    'id': 0,
+    'id': 27192,
     'linked_id_noted': 0,
     'linked_id_placeholder': None,
     'lowalch': 0,
@@ -699,9 +700,9 @@ lms_items_without_wiki_page = {
   },
   "Rangers' tunic": {
     'buy_limit': None,
-    'cost': 0,
+    'cost': 10,
     'highalch': 0,
-    'id': 0,
+    'id': 27179,
     'linked_id_noted': 0,
     'linked_id_placeholder': None,
     'lowalch': 0,
@@ -712,9 +713,9 @@ lms_items_without_wiki_page = {
   },
   'Rune defender': {
     'buy_limit': None,
-    'cost': 0,
+    'cost': 3,
     'highalch': 0,
-    'id': 0,
+    'id': 27185,
     'linked_id_noted': 0,
     'linked_id_placeholder': None,
     'lowalch': 0,
@@ -749,11 +750,11 @@ lms_items_without_wiki_page = {
     'tradeable': False,  # double check this
     'tradeable_on_ge': False
   },
-  'Spiked macles': {
+  'Spiked mancles': {
     'buy_limit': None,
-    'cost': 0,
+    'cost': 10,
     'highalch': 0,
-    'id': 0,
+    'id': 27178,
     'linked_id_noted': 0,
     'linked_id_placeholder': None,
     'lowalch': 0,
@@ -764,9 +765,9 @@ lms_items_without_wiki_page = {
   },
   'Tome of fire': {
     'buy_limit': None,
-    'cost': 0,
+    'cost': 1,
     'highalch': 0,
-    'id': 0,
+    'id': 27358,
     'linked_id_noted': 0,
     'linked_id_placeholder': None,
     'lowalch': 0,
@@ -777,9 +778,9 @@ lms_items_without_wiki_page = {
   },
   'Tormented bracelet': {
     'buy_limit': None,
-    'cost': 0,
+    'cost': 10,
     'highalch': 0,
-    'id': 0,
+    'id': 27171,
     'linked_id_noted': 0,
     'linked_id_placeholder': None,
     'lowalch': 0,
@@ -790,9 +791,9 @@ lms_items_without_wiki_page = {
   },
   'Unholy book': {
     'buy_limit': None,
-    'cost': 0,
+    'cost': 1,
     'highalch': 0,
-    'id': 0,
+    'id': 27191,
     'linked_id_noted': 0,
     'linked_id_placeholder': None,
     'lowalch': 0,
@@ -803,9 +804,9 @@ lms_items_without_wiki_page = {
   },
   'Wizard boots': {
     'buy_limit': None,
-    'cost': 0,
+    'cost': 5,
     'highalch': 0,
-    'id': 0,
+    'id': 27162,
     'linked_id_noted': 0,
     'linked_id_placeholder': None,
     'lowalch': 0,
@@ -842,9 +843,9 @@ lms_items_without_wiki_page = {
   },
   'Zaryte crossbow': {
     'buy_limit': None,
-    'cost': 0,
+    'cost': 40,
     'highalch': 0,
-    'id': 0,
+    'id': 27186,
     'linked_id_noted': 0,
     'linked_id_placeholder': None,
     'lowalch': 0,
@@ -884,3 +885,7 @@ compare_items(7462, 23593, items)   # barrows gloves
 # missing_lms_wiki_pages = sorted([item for item in lms_item_names if item not in lms_item_names_with_wiki_pages])
 # print("Number of lms items without wiki pages: ", len(missing_lms_wiki_pages))
 # print("lms items without wiki pages:\n", pformat(missing_lms_wiki_pages))
+
+
+# Create new LMS items
+
