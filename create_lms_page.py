@@ -28,6 +28,7 @@ class CustomPrettyPrinter(PrettyPrinter):
       return super().format(filtered_dict, context, maxlevels, level)
     return super().format(obj, context, maxlevels, level)
 
+
 exclude_icon = "icon"
 pprinter = CustomPrettyPrinter(exclude_attr=exclude_icon)
 
@@ -67,7 +68,8 @@ def compare_items(id1: int, id2: int, items: AllItems):
   item2 = items.lookup_by_item_id(id2)
   dict1 = asdict(item1)
   dict2 = asdict(item2)
-  differences = {key: (dict1[key], dict2[key]) for key in dict1 if dict1[key] != dict2[key]}
+  differences = {key: (dict1[key], dict2[key])
+                 for key in dict1 if dict1[key] != dict2[key]}
   pprinter.pprint(differences)
 
 
@@ -83,15 +85,15 @@ def create_lms_item(original_item: ItemProperties, lms_item: LmsItem) -> ItemPro
   lms_object = replace(original_item,
                        wiki_name=original_item.wiki_name + " (Last Man Standing)",
                        wiki_url=original_item.wiki_url + "_(Last_Man_Standing)",
-                       **lms_item
+                       **asdict(lms_item)
                       )
+  return lms_object
 
 
 def create_template(item: ItemProperties):
   '''Create wikitext page by populating lms_wikitext_template.wikitext.j2 template.
   Created files will be created at ./page_outputs/{item_name}.wikitext'''
   print()
-
 
 
 lms_item_names = [
@@ -239,621 +241,621 @@ lms_item_names = [
     "Berserker ring"        # 23595
 ]
 
-# TODO: update each individual cost/id num from chisel.weirdgloop
 # all items will have a `wiki_name` equal to the item name plus (Last Man Standing)
 # and same for `wiki_url`
+# TODO: get noted id for items
 lms_items_without_wiki_page = {
-  '3rd age mage hat': {
-    'buy_limit': None,
-    'cost': 40,
-    'highalch': 0,
-    'id': 27183,
-    'linked_id_noted': 0,
-    'linked_id_placeholder': None,
-    'lowalch': 0,
-    'members': False,
-    'noteable': True,
-    'tradeable': False,  # double check this
-    'tradeable_on_ge': False
-  },
-  '3rd age range coif': {
-    'buy_limit': None,
-    'cost': 20,
-    'highalch': 0,
-    'id': 27201,
-    'linked_id_noted': 0,
-    'linked_id_placeholder': None,
-    'lowalch': 0,
-    'members': False,
-    'noteable': True,
-    'tradeable': False,  # double check this
-    'tradeable_on_ge': False
-  },
-  '3rd age range legs': {
-    'buy_limit': None,
-    'cost': 20,
-    'highalch': 0,
-    'id': 27200,
-    'linked_id_noted': 0,
-    'linked_id_placeholder': None,
-    'lowalch': 0,
-    'members': False,
-    'noteable': True,
-    'tradeable': False,  # double check this
-    'tradeable_on_ge': False
-  },
-  '3rd age range top': {
-    'buy_limit': None,
-    'cost': 20,
-    'highalch': 0,
-    'id': 27199,
-    'linked_id_noted': 0,
-    'linked_id_placeholder': None,
-    'lowalch': 0,
-    'members': False,
-    'noteable': True,
-    'tradeable': False,  # double check this
-    'tradeable_on_ge': False
-  },
-  '3rd age robe': {
-    'buy_limit': None,
-    'cost': 40,
-    'highalch': 0,
-    'id': 20577,
-    'linked_id_noted': 0,
-    'linked_id_placeholder': None,
-    'lowalch': 0,
-    'members': False,
-    'noteable': True,
-    'tradeable': False,  # double check this
-    'tradeable_on_ge': False
-  },
-  '3rd age robe top': {
-    'buy_limit': None,
-    'cost': 40,
-    'highalch': 0,
-    'id': 20576,
-    'linked_id_noted': 0,
-    'linked_id_placeholder': None,
-    'lowalch': 0,
-    'members': False,
-    'noteable': True,
-    'tradeable': False,  # double check this
-    'tradeable_on_ge': False
-  },
-  'Amulet of torture': {
-    'buy_limit': None,
-    'cost': 10,
-    'highalch': 0,
-    'id': 27173,
-    'linked_id_noted': 0,
-    'linked_id_placeholder': None,
-    'lowalch': 0,
-    'members': False,
-    'noteable': True,
-    'tradeable': False,  # double check this
-    'tradeable_on_ge': False
-  },
-  'Ancestral robe top': {
-    'buy_limit': None,
-    'cost': 55,
-    'highalch': 0,
-    'id': 27193,
-    'linked_id_noted': 0,
-    'linked_id_placeholder': None,
-    'lowalch': 0,
-    'members': False,
-    'noteable': True,
-    'tradeable': False,  # double check this
-    'tradeable_on_ge': False
-  },
-  'Ancient godsword': {
-    'buy_limit': None,
-    'cost': 40,
-    'highalch': 0,
-    'id': 27184,
-    'linked_id_noted': 0,
-    'linked_id_placeholder': None,
-    'lowalch': 0,
-    'members': False,
-    'noteable': True,
-    'tradeable': False,  # double check this
-    'tradeable_on_ge': False
-  },
-  'Ancient staff': {
-    'buy_limit': None,
-    'cost': 40,
-    'highalch': 0,
-    'id': 20431,
-    'linked_id_noted': 0,
-    'linked_id_placeholder': None,
-    'lowalch': 0,
-    'members': False,
-    'noteable': True,
-    'tradeable': False,  # double check this
-    'tradeable_on_ge': False
-  },
-  'Berserker helm': {
-    'buy_limit': None,
-    'cost': 1,
-    'highalch': 0,
-    'id': 27169,
-    'linked_id_noted': 0,
-    'linked_id_placeholder': None,
-    'lowalch': 0,
-    'members': False,
-    'noteable': True,
-    'tradeable': False,  # double check this
-    'tradeable_on_ge': False
-  },
-  "Black d'hide chaps": {
-    'buy_limit': None,
-    'cost': 30,
-    'highalch': 0,
-    'id': 20424,
-    'linked_id_noted': 0,
-    'linked_id_placeholder': None,
-    'lowalch': 0,
-    'members': False,
-    'noteable': True,
-    'tradeable': False,  # double check this
-    'tradeable_on_ge': False
-  },
-  'Dragon knife': {
-    'buy_limit': None,
-    'cost': 5,
-    'highalch': 0,
-    'id': 27157,
-    'linked_id_noted': 0,
-    'linked_id_placeholder': None,
-    'lowalch': 0,
-    'members': False,
-    'noteable': True,
-    'tradeable': False,  # double check this
-    'tradeable_on_ge': False
-  },
-  'Dragon scimitar': {
-    'buy_limit': None,
-    'cost': 30,
-    'highalch': 0,
-    'id': 20406,
-    'linked_id_noted': 0,
-    'linked_id_placeholder': None,
-    'lowalch': 0,
-    'members': False,
-    'noteable': True,
-    'tradeable': False,  # double check this
-    'tradeable_on_ge': False
-  },
-  'Elder chaos hood': {
-    'buy_limit': None,
-    'cost': 10,
-    'highalch': 0,
-    'id': 27176,
-    'linked_id_noted': 0,
-    'linked_id_placeholder': None,
-    'lowalch': 0,
-    'members': False,
-    'noteable': True,
-    'tradeable': False,  # double check this
-    'tradeable_on_ge': False
-  },
-  'Elder chaos robe': {
-    'buy_limit': None,
-    'cost': 10,
-    'highalch': 0,
-    'id': 27175,
-    'linked_id_noted': 0,
-    'linked_id_placeholder': None,
-    'lowalch': 0,
-    'members': False,
-    'noteable': True,
-    'tradeable': False,  # double check this
-    'tradeable_on_ge': False
-  },
-  'Elder chaos top': {
-    'buy_limit': None,
-    'cost': 10,
-    'highalch': 0,
-    'id': 27174,
-    'linked_id_noted': 0,
-    'linked_id_placeholder': None,
-    'lowalch': 0,
-    'members': False,
-    'noteable': True,
-    'tradeable': False,  # double check this
-    'tradeable_on_ge': False
-  },
-  'Fremennik kilt': {
-    'buy_limit': None,
-    'cost': 10,
-    'highalch': 0,
-    'id': 27177,
-    'linked_id_noted': 0,
-    'linked_id_placeholder': None,
-    'lowalch': 0,
-    'members': False,
-    'noteable': True,
-    'tradeable': False,  # double check this
-    'tradeable_on_ge': False
-  },
-  'Ghostly hood': {
-    'buy_limit': None,
-    'cost': 1,
-    'highalch': 0,
-    'id': 27166,
-    'linked_id_noted': 0,
-    'linked_id_placeholder': None,
-    'lowalch': 0,
-    'members': False,
-    'noteable': True,
-    'tradeable': False,  # double check this
-    'tradeable_on_ge': False
-  },
-  'Ghostly robe': {
-    'buy_limit': None,
-    'cost': 1,
-    'highalch': 0,
-    'id': 27168,
-    'linked_id_noted': 0,
-    'linked_id_placeholder': None,
-    'lowalch': 0,
-    'members': False,
-    'noteable': True,
-    'tradeable': False,  # double check this
-    'tradeable_on_ge': False
-  },
-  'Ghostly robe (top)': {
-    'buy_limit': None,
-    'cost': 1,
-    'highalch': 0,
-    'id': 27167,
-    'linked_id_noted': 0,
-    'linked_id_placeholder': None,
-    'lowalch': 0,
-    'members': False,
-    'noteable': True,
-    'tradeable': False,  # double check this
-    'tradeable_on_ge': False
-  },
-  'Guthix chaps': {
-    'buy_limit': None,
-    'cost': 10,
-    'highalch': 0,
-    'id': 27180,
-    'linked_id_noted': 0,
-    'linked_id_placeholder': None,
-    'lowalch': 0,
-    'members': False,
-    'noteable': True,
-    'tradeable': False,  # double check this
-    'tradeable_on_ge': False
-  },
-  'Guthix halo': {
-    'buy_limit': None,
-    'cost': 5,
-    'highalch': 0,
-    'id': 27163,
-    'linked_id_noted': 0,
-    'linked_id_placeholder': None,
-    'lowalch': 0,
-    'members': False,
-    'noteable': True,
-    'tradeable': False,  # double check this
-    'tradeable_on_ge': False
-  },
-  'Infinity boots': {
-    'buy_limit': None,
-    'cost': 10,
-    'highalch': 0,
-    'id': 27170,
-    'linked_id_noted': 0,
-    'linked_id_placeholder': None,
-    'lowalch': 0,
-    'members': False,
-    'noteable': True,
-    'tradeable': False,  # double check this
-    'tradeable_on_ge': False
-  },
-  "Inquisitor's great helm": {
-    'buy_limit': None,
-    'cost': 20,
-    'highalch': 0,
-    'id': 27195,
-    'linked_id_noted': 0,
-    'linked_id_placeholder': None,
-    'lowalch': 0,
-    'members': False,
-    'noteable': True,
-    'tradeable': False,  # double check this
-    'tradeable_on_ge': False
-  },
-  "Inquisitor's hauberk": {
-    'buy_limit': None,
-    'cost': 20,
-    'highalch': 0,
-    'id': 27196,
-    'linked_id_noted': 0,
-    'linked_id_placeholder': None,
-    'lowalch': 0,
-    'members': False,
-    'noteable': True,
-    'tradeable': False,  # double check this
-    'tradeable_on_ge': False
-  },
-  "Inquisitor's mace": {
-    'buy_limit': None,
-    'cost': 20,
-    'highalch': 0,
-    'id': 27198,
-    'linked_id_noted': 0,
-    'linked_id_placeholder': None,
-    'lowalch': 0,
-    'members': False,
-    'noteable': True,
-    'tradeable': False,  # double check this
-    'tradeable_on_ge': False
-  },
-  "Inquisitor's plateskirt": {
-    'buy_limit': None,
-    'cost': 20,
-    'highalch': 0,
-    'id': 27197,
-    'linked_id_noted': 0,
-    'linked_id_placeholder': None,
-    'lowalch': 0,
-    'members': False,
-    'noteable': True,
-    'tradeable': False,  # double check this
-    'tradeable_on_ge': False
-  },
-  'Mithril gloves': {
-    'buy_limit': None,
-    'cost': 350,  # not sure MOID is correct here
-    'highalch': 0,
-    'id': 20581,
-    'linked_id_noted': 0,
-    'linked_id_placeholder': None,
-    'lowalch': 0,
-    'members': False,
-    'noteable': True,
-    'tradeable': False,  # double check this
-    'tradeable_on_ge': False
-  },
-  'Mystic robe bottom (dark)': {
-    'buy_limit': None,
-    'cost': 1,
-    'highalch': 0,
-    'id': 27159,
-    'linked_id_noted': 0,
-    'linked_id_placeholder': None,
-    'lowalch': 0,
-    'members': False,
-    'noteable': True,
-    'tradeable': False,  # double check this
-    'tradeable_on_ge': False
-  },
-  'Mystic robe bottom (light)': {
-    'buy_limit': None,
-    'cost': 1,
-    'highalch': 0,
-    'id': 27161,
-    'linked_id_noted': 0,
-    'linked_id_placeholder': None,
-    'lowalch': 0,
-    'members': False,
-    'noteable': True,
-    'tradeable': False,  # double check this
-    'tradeable_on_ge': False
-  },
-  'Mystic robe top (dark)': {
-    'buy_limit': None,
-    'cost': 1,
-    'highalch': 0,
-    'id': 27158,
-    'linked_id_noted': 0,
-    'linked_id_placeholder': None,
-    'lowalch': 0,
-    'members': False,
-    'noteable': True,
-    'tradeable': False,  # double check this
-    'tradeable_on_ge': False
-  },
-  'Mystic robe top (light)': {
-    'buy_limit': None,
-    'cost': 1,
-    'highalch': 0,
-    'id': 27160,
-    'linked_id_noted': 0,
-    'linked_id_placeholder': None,
-    'lowalch': 0,
-    'members': False,
-    'noteable': True,
-    'tradeable': False,  # double check this
-    'tradeable_on_ge': False
-  },
-  'Necklace of anguish': {
-    'buy_limit': None,
-    'cost': 10,
-    'highalch': 0,
-    'id': 27172,
-    'linked_id_noted': 0,
-    'linked_id_placeholder': None,
-    'lowalch': 0,
-    'members': False,
-    'noteable': True,
-    'tradeable': False,  # double check this
-    'tradeable_on_ge': False
-  },
-  'Opal dragon bolts (e)': {
-    'buy_limit': None,
-    'cost': 1,
-    'highalch': 0,
-    'id': 27192,
-    'linked_id_noted': 0,
-    'linked_id_placeholder': None,
-    'lowalch': 0,
-    'members': False,
-    'noteable': True,
-    'tradeable': False,  # double check this
-    'tradeable_on_ge': False
-  },
-  "Rangers' tunic": {
-    'buy_limit': None,
-    'cost': 10,
-    'highalch': 0,
-    'id': 27179,
-    'linked_id_noted': 0,
-    'linked_id_placeholder': None,
-    'lowalch': 0,
-    'members': False,
-    'noteable': True,
-    'tradeable': False,  # double check this
-    'tradeable_on_ge': False
-  },
-  'Rune defender': {
-    'buy_limit': None,
-    'cost': 3,
-    'highalch': 0,
-    'id': 27185,
-    'linked_id_noted': 0,
-    'linked_id_placeholder': None,
-    'lowalch': 0,
-    'members': False,
-    'noteable': True,
-    'tradeable': False,  # double check this
-    'tradeable_on_ge': False
-  },
-  'Saradomin chaps': {
-    'buy_limit': None,
-    'cost': 10,
-    'highalch': 0,
-    'id': 27182,
-    'linked_id_noted': 0,
-    'linked_id_placeholder': None,
-    'lowalch': 0,
-    'members': False,
-    'noteable': True,
-    'tradeable': False,  # double check this
-    'tradeable_on_ge': False
-  },
-  'Saradomin halo': {
-    'buy_limit': None,
-    'cost': 5,
-    'highalch': 0,
-    'id': 27165,
-    'linked_id_noted': 0,
-    'linked_id_placeholder': None,
-    'lowalch': 0,
-    'members': False,
-    'noteable': True,
-    'tradeable': False,  # double check this
-    'tradeable_on_ge': False
-  },
-  'Spiked mancles': {
-    'buy_limit': None,
-    'cost': 10,
-    'highalch': 0,
-    'id': 27178,
-    'linked_id_noted': 0,
-    'linked_id_placeholder': None,
-    'lowalch': 0,
-    'members': False,
-    'noteable': True,
-    'tradeable': False,  # double check this
-    'tradeable_on_ge': False
-  },
-  'Tome of fire': {
-    'buy_limit': None,
-    'cost': 1,
-    'highalch': 0,
-    'id': 27358,
-    'linked_id_noted': 0,
-    'linked_id_placeholder': None,
-    'lowalch': 0,
-    'members': False,
-    'noteable': True,
-    'tradeable': False,  # double check this
-    'tradeable_on_ge': False
-  },
-  'Tormented bracelet': {
-    'buy_limit': None,
-    'cost': 10,
-    'highalch': 0,
-    'id': 27171,
-    'linked_id_noted': 0,
-    'linked_id_placeholder': None,
-    'lowalch': 0,
-    'members': False,
-    'noteable': True,
-    'tradeable': False,  # double check this
-    'tradeable_on_ge': False
-  },
-  'Unholy book': {
-    'buy_limit': None,
-    'cost': 1,
-    'highalch': 0,
-    'id': 27191,
-    'linked_id_noted': 0,
-    'linked_id_placeholder': None,
-    'lowalch': 0,
-    'members': False,
-    'noteable': True,
-    'tradeable': False,  # double check this
-    'tradeable_on_ge': False
-  },
-  'Wizard boots': {
-    'buy_limit': None,
-    'cost': 5,
-    'highalch': 0,
-    'id': 27162,
-    'linked_id_noted': 0,
-    'linked_id_placeholder': None,
-    'lowalch': 0,
-    'members': False,
-    'noteable': True,
-    'tradeable': False,  # double check this
-    'tradeable_on_ge': False
-  },
-  'Zamorak chaps': {
-    'buy_limit': None,
-    'cost': 10,
-    'highalch': 0,
-    'id': 27181,
-    'linked_id_noted': 0,
-    'linked_id_placeholder': None,
-    'lowalch': 0,
-    'members': False,
-    'noteable': True,
-    'tradeable': False,  # double check this
-    'tradeable_on_ge': False
-  },
-  'Zamorak halo': {
-    'buy_limit': None,
-    'cost': 5,
-    'highalch': 0,
-    'id': 27164,
-    'linked_id_noted': 0,
-    'linked_id_placeholder': None,
-    'lowalch': 0,
-    'members': False,
-    'noteable': True,
-    'tradeable': False,  # double check this
-    'tradeable_on_ge': False
-  },
-  'Zaryte crossbow': {
-    'buy_limit': None,
-    'cost': 40,
-    'highalch': 0,
-    'id': 27186,
-    'linked_id_noted': 0,
-    'linked_id_placeholder': None,
-    'lowalch': 0,
-    'members': False,
-    'noteable': True,
-    'tradeable': False,  # double check this
-    'tradeable_on_ge': False
-  }
+    '3rd age mage hat': {
+        'buy_limit': None,
+        'cost': 40,
+        'highalch': 0,
+        'id': 27183,
+        'linked_id_noted': 0,
+        'linked_id_placeholder': None,
+        'lowalch': 0,
+        'members': False,
+        'noteable': True,
+        'tradeable': False,  # double check this
+        'tradeable_on_ge': False
+    },
+    '3rd age range coif': {
+        'buy_limit': None,
+        'cost': 20,
+        'highalch': 0,
+        'id': 27201,
+        'linked_id_noted': 0,
+        'linked_id_placeholder': None,
+        'lowalch': 0,
+        'members': False,
+        'noteable': True,
+        'tradeable': False,  # double check this
+        'tradeable_on_ge': False
+    },
+    '3rd age range legs': {
+        'buy_limit': None,
+        'cost': 20,
+        'highalch': 0,
+        'id': 27200,
+        'linked_id_noted': 0,
+        'linked_id_placeholder': None,
+        'lowalch': 0,
+        'members': False,
+        'noteable': True,
+        'tradeable': False,  # double check this
+        'tradeable_on_ge': False
+    },
+    '3rd age range top': {
+        'buy_limit': None,
+        'cost': 20,
+        'highalch': 0,
+        'id': 27199,
+        'linked_id_noted': 0,
+        'linked_id_placeholder': None,
+        'lowalch': 0,
+        'members': False,
+        'noteable': True,
+        'tradeable': False,  # double check this
+        'tradeable_on_ge': False
+    },
+    '3rd age robe': {
+        'buy_limit': None,
+        'cost': 40,
+        'highalch': 0,
+        'id': 20577,
+        'linked_id_noted': 0,
+        'linked_id_placeholder': None,
+        'lowalch': 0,
+        'members': False,
+        'noteable': True,
+        'tradeable': False,  # double check this
+        'tradeable_on_ge': False
+    },
+    '3rd age robe top': {
+        'buy_limit': None,
+        'cost': 40,
+        'highalch': 0,
+        'id': 20576,
+        'linked_id_noted': 0,
+        'linked_id_placeholder': None,
+        'lowalch': 0,
+        'members': False,
+        'noteable': True,
+        'tradeable': False,  # double check this
+        'tradeable_on_ge': False
+    },
+    'Amulet of torture': {
+        'buy_limit': None,
+        'cost': 10,
+        'highalch': 0,
+        'id': 27173,
+        'linked_id_noted': 0,
+        'linked_id_placeholder': None,
+        'lowalch': 0,
+        'members': False,
+        'noteable': True,
+        'tradeable': False,  # double check this
+        'tradeable_on_ge': False
+    },
+    'Ancestral robe top': {
+        'buy_limit': None,
+        'cost': 55,
+        'highalch': 0,
+        'id': 27193,
+        'linked_id_noted': 0,
+        'linked_id_placeholder': None,
+        'lowalch': 0,
+        'members': False,
+        'noteable': True,
+        'tradeable': False,  # double check this
+        'tradeable_on_ge': False
+    },
+    'Ancient godsword': {
+        'buy_limit': None,
+        'cost': 40,
+        'highalch': 0,
+        'id': 27184,
+        'linked_id_noted': 0,
+        'linked_id_placeholder': None,
+        'lowalch': 0,
+        'members': False,
+        'noteable': True,
+        'tradeable': False,  # double check this
+        'tradeable_on_ge': False
+    },
+    'Ancient staff': {
+        'buy_limit': None,
+        'cost': 40,
+        'highalch': 0,
+        'id': 20431,
+        'linked_id_noted': 0,
+        'linked_id_placeholder': None,
+        'lowalch': 0,
+        'members': False,
+        'noteable': True,
+        'tradeable': False,  # double check this
+        'tradeable_on_ge': False
+    },
+    'Berserker helm': {
+        'buy_limit': None,
+        'cost': 1,
+        'highalch': 0,
+        'id': 27169,
+        'linked_id_noted': 0,
+        'linked_id_placeholder': None,
+        'lowalch': 0,
+        'members': False,
+        'noteable': True,
+        'tradeable': False,  # double check this
+        'tradeable_on_ge': False
+    },
+    "Black d'hide chaps": {
+        'buy_limit': None,
+        'cost': 30,
+        'highalch': 0,
+        'id': 20424,
+        'linked_id_noted': 0,
+        'linked_id_placeholder': None,
+        'lowalch': 0,
+        'members': False,
+        'noteable': True,
+        'tradeable': False,  # double check this
+        'tradeable_on_ge': False
+    },
+    'Dragon knife': {
+        'buy_limit': None,
+        'cost': 5,
+        'highalch': 0,
+        'id': 27157,
+        'linked_id_noted': 0,
+        'linked_id_placeholder': None,
+        'lowalch': 0,
+        'members': False,
+        'noteable': True,
+        'tradeable': False,  # double check this
+        'tradeable_on_ge': False
+    },
+    'Dragon scimitar': {
+        'buy_limit': None,
+        'cost': 30,
+        'highalch': 0,
+        'id': 20406,
+        'linked_id_noted': 0,
+        'linked_id_placeholder': None,
+        'lowalch': 0,
+        'members': False,
+        'noteable': True,
+        'tradeable': False,  # double check this
+        'tradeable_on_ge': False
+    },
+    'Elder chaos hood': {
+        'buy_limit': None,
+        'cost': 10,
+        'highalch': 0,
+        'id': 27176,
+        'linked_id_noted': 0,
+        'linked_id_placeholder': None,
+        'lowalch': 0,
+        'members': False,
+        'noteable': True,
+        'tradeable': False,  # double check this
+        'tradeable_on_ge': False
+    },
+    'Elder chaos robe': {
+        'buy_limit': None,
+        'cost': 10,
+        'highalch': 0,
+        'id': 27175,
+        'linked_id_noted': 0,
+        'linked_id_placeholder': None,
+        'lowalch': 0,
+        'members': False,
+        'noteable': True,
+        'tradeable': False,  # double check this
+        'tradeable_on_ge': False
+    },
+    'Elder chaos top': {
+        'buy_limit': None,
+        'cost': 10,
+        'highalch': 0,
+        'id': 27174,
+        'linked_id_noted': 0,
+        'linked_id_placeholder': None,
+        'lowalch': 0,
+        'members': False,
+        'noteable': True,
+        'tradeable': False,  # double check this
+        'tradeable_on_ge': False
+    },
+    'Fremennik kilt': {
+        'buy_limit': None,
+        'cost': 10,
+        'highalch': 0,
+        'id': 27177,
+        'linked_id_noted': 0,
+        'linked_id_placeholder': None,
+        'lowalch': 0,
+        'members': False,
+        'noteable': True,
+        'tradeable': False,  # double check this
+        'tradeable_on_ge': False
+    },
+    'Ghostly hood': {
+        'buy_limit': None,
+        'cost': 1,
+        'highalch': 0,
+        'id': 27166,
+        'linked_id_noted': 0,
+        'linked_id_placeholder': None,
+        'lowalch': 0,
+        'members': False,
+        'noteable': True,
+        'tradeable': False,  # double check this
+        'tradeable_on_ge': False
+    },
+    'Ghostly robe': {
+        'buy_limit': None,
+        'cost': 1,
+        'highalch': 0,
+        'id': 27168,
+        'linked_id_noted': 0,
+        'linked_id_placeholder': None,
+        'lowalch': 0,
+        'members': False,
+        'noteable': True,
+        'tradeable': False,  # double check this
+        'tradeable_on_ge': False
+    },
+    'Ghostly robe (top)': {
+        'buy_limit': None,
+        'cost': 1,
+        'highalch': 0,
+        'id': 27167,
+        'linked_id_noted': 0,
+        'linked_id_placeholder': None,
+        'lowalch': 0,
+        'members': False,
+        'noteable': True,
+        'tradeable': False,  # double check this
+        'tradeable_on_ge': False
+    },
+    'Guthix chaps': {
+        'buy_limit': None,
+        'cost': 10,
+        'highalch': 0,
+        'id': 27180,
+        'linked_id_noted': 0,
+        'linked_id_placeholder': None,
+        'lowalch': 0,
+        'members': False,
+        'noteable': True,
+        'tradeable': False,  # double check this
+        'tradeable_on_ge': False
+    },
+    'Guthix halo': {
+        'buy_limit': None,
+        'cost': 5,
+        'highalch': 0,
+        'id': 27163,
+        'linked_id_noted': 0,
+        'linked_id_placeholder': None,
+        'lowalch': 0,
+        'members': False,
+        'noteable': True,
+        'tradeable': False,  # double check this
+        'tradeable_on_ge': False
+    },
+    'Infinity boots': {
+        'buy_limit': None,
+        'cost': 10,
+        'highalch': 0,
+        'id': 27170,
+        'linked_id_noted': 0,
+        'linked_id_placeholder': None,
+        'lowalch': 0,
+        'members': False,
+        'noteable': True,
+        'tradeable': False,  # double check this
+        'tradeable_on_ge': False
+    },
+    "Inquisitor's great helm": {
+        'buy_limit': None,
+        'cost': 20,
+        'highalch': 0,
+        'id': 27195,
+        'linked_id_noted': 0,
+        'linked_id_placeholder': None,
+        'lowalch': 0,
+        'members': False,
+        'noteable': True,
+        'tradeable': False,  # double check this
+        'tradeable_on_ge': False
+    },
+    "Inquisitor's hauberk": {
+        'buy_limit': None,
+        'cost': 20,
+        'highalch': 0,
+        'id': 27196,
+        'linked_id_noted': 0,
+        'linked_id_placeholder': None,
+        'lowalch': 0,
+        'members': False,
+        'noteable': True,
+        'tradeable': False,  # double check this
+        'tradeable_on_ge': False
+    },
+    "Inquisitor's mace": {
+        'buy_limit': None,
+        'cost': 20,
+        'highalch': 0,
+        'id': 27198,
+        'linked_id_noted': 0,
+        'linked_id_placeholder': None,
+        'lowalch': 0,
+        'members': False,
+        'noteable': True,
+        'tradeable': False,  # double check this
+        'tradeable_on_ge': False
+    },
+    "Inquisitor's plateskirt": {
+        'buy_limit': None,
+        'cost': 20,
+        'highalch': 0,
+        'id': 27197,
+        'linked_id_noted': 0,
+        'linked_id_placeholder': None,
+        'lowalch': 0,
+        'members': False,
+        'noteable': True,
+        'tradeable': False,  # double check this
+        'tradeable_on_ge': False
+    },
+    'Mithril gloves': {
+        'buy_limit': None,
+        'cost': 350,  # not sure MOID is correct here
+        'highalch': 0,
+        'id': 20581,
+        'linked_id_noted': 0,
+        'linked_id_placeholder': None,
+        'lowalch': 0,
+        'members': False,
+        'noteable': True,
+        'tradeable': False,  # double check this
+        'tradeable_on_ge': False
+    },
+    'Mystic robe bottom (dark)': {
+        'buy_limit': None,
+        'cost': 1,
+        'highalch': 0,
+        'id': 27159,
+        'linked_id_noted': 0,
+        'linked_id_placeholder': None,
+        'lowalch': 0,
+        'members': False,
+        'noteable': True,
+        'tradeable': False,  # double check this
+        'tradeable_on_ge': False
+    },
+    'Mystic robe bottom (light)': {
+        'buy_limit': None,
+        'cost': 1,
+        'highalch': 0,
+        'id': 27161,
+        'linked_id_noted': 0,
+        'linked_id_placeholder': None,
+        'lowalch': 0,
+        'members': False,
+        'noteable': True,
+        'tradeable': False,  # double check this
+        'tradeable_on_ge': False
+    },
+    'Mystic robe top (dark)': {
+        'buy_limit': None,
+        'cost': 1,
+        'highalch': 0,
+        'id': 27158,
+        'linked_id_noted': 0,
+        'linked_id_placeholder': None,
+        'lowalch': 0,
+        'members': False,
+        'noteable': True,
+        'tradeable': False,  # double check this
+        'tradeable_on_ge': False
+    },
+    'Mystic robe top (light)': {
+        'buy_limit': None,
+        'cost': 1,
+        'highalch': 0,
+        'id': 27160,
+        'linked_id_noted': 0,
+        'linked_id_placeholder': None,
+        'lowalch': 0,
+        'members': False,
+        'noteable': True,
+        'tradeable': False,  # double check this
+        'tradeable_on_ge': False
+    },
+    'Necklace of anguish': {
+        'buy_limit': None,
+        'cost': 10,
+        'highalch': 0,
+        'id': 27172,
+        'linked_id_noted': 0,
+        'linked_id_placeholder': None,
+        'lowalch': 0,
+        'members': False,
+        'noteable': True,
+        'tradeable': False,  # double check this
+        'tradeable_on_ge': False
+    },
+    'Opal dragon bolts (e)': {
+        'buy_limit': None,
+        'cost': 1,
+        'highalch': 0,
+        'id': 27192,
+        'linked_id_noted': 0,
+        'linked_id_placeholder': None,
+        'lowalch': 0,
+        'members': False,
+        'noteable': True,
+        'tradeable': False,  # double check this
+        'tradeable_on_ge': False
+    },
+    "Rangers' tunic": {
+        'buy_limit': None,
+        'cost': 10,
+        'highalch': 0,
+        'id': 27179,
+        'linked_id_noted': 0,
+        'linked_id_placeholder': None,
+        'lowalch': 0,
+        'members': False,
+        'noteable': True,
+        'tradeable': False,  # double check this
+        'tradeable_on_ge': False
+    },
+    'Rune defender': {
+        'buy_limit': None,
+        'cost': 3,
+        'highalch': 0,
+        'id': 27185,
+        'linked_id_noted': 0,
+        'linked_id_placeholder': None,
+        'lowalch': 0,
+        'members': False,
+        'noteable': True,
+        'tradeable': False,  # double check this
+        'tradeable_on_ge': False
+    },
+    'Saradomin chaps': {
+        'buy_limit': None,
+        'cost': 10,
+        'highalch': 0,
+        'id': 27182,
+        'linked_id_noted': 0,
+        'linked_id_placeholder': None,
+        'lowalch': 0,
+        'members': False,
+        'noteable': True,
+        'tradeable': False,  # double check this
+        'tradeable_on_ge': False
+    },
+    'Saradomin halo': {
+        'buy_limit': None,
+        'cost': 5,
+        'highalch': 0,
+        'id': 27165,
+        'linked_id_noted': 0,
+        'linked_id_placeholder': None,
+        'lowalch': 0,
+        'members': False,
+        'noteable': True,
+        'tradeable': False,  # double check this
+        'tradeable_on_ge': False
+    },
+    'Spiked mancles': {
+        'buy_limit': None,
+        'cost': 10,
+        'highalch': 0,
+        'id': 27178,
+        'linked_id_noted': 0,
+        'linked_id_placeholder': None,
+        'lowalch': 0,
+        'members': False,
+        'noteable': True,
+        'tradeable': False,  # double check this
+        'tradeable_on_ge': False
+    },
+    'Tome of fire': {
+        'buy_limit': None,
+        'cost': 1,
+        'highalch': 0,
+        'id': 27358,
+        'linked_id_noted': 0,
+        'linked_id_placeholder': None,
+        'lowalch': 0,
+        'members': False,
+        'noteable': True,
+        'tradeable': False,  # double check this
+        'tradeable_on_ge': False
+    },
+    'Tormented bracelet': {
+        'buy_limit': None,
+        'cost': 10,
+        'highalch': 0,
+        'id': 27171,
+        'linked_id_noted': 0,
+        'linked_id_placeholder': None,
+        'lowalch': 0,
+        'members': False,
+        'noteable': True,
+        'tradeable': False,  # double check this
+        'tradeable_on_ge': False
+    },
+    'Unholy book': {
+        'buy_limit': None,
+        'cost': 1,
+        'highalch': 0,
+        'id': 27191,
+        'linked_id_noted': 0,
+        'linked_id_placeholder': None,
+        'lowalch': 0,
+        'members': False,
+        'noteable': True,
+        'tradeable': False,  # double check this
+        'tradeable_on_ge': False
+    },
+    'Wizard boots': {
+        'buy_limit': None,
+        'cost': 5,
+        'highalch': 0,
+        'id': 27162,
+        'linked_id_noted': 0,
+        'linked_id_placeholder': None,
+        'lowalch': 0,
+        'members': False,
+        'noteable': True,
+        'tradeable': False,  # double check this
+        'tradeable_on_ge': False
+    },
+    'Zamorak chaps': {
+        'buy_limit': None,
+        'cost': 10,
+        'highalch': 0,
+        'id': 27181,
+        'linked_id_noted': 0,
+        'linked_id_placeholder': None,
+        'lowalch': 0,
+        'members': False,
+        'noteable': True,
+        'tradeable': False,  # double check this
+        'tradeable_on_ge': False
+    },
+    'Zamorak halo': {
+        'buy_limit': None,
+        'cost': 5,
+        'highalch': 0,
+        'id': 27164,
+        'linked_id_noted': 0,
+        'linked_id_placeholder': None,
+        'lowalch': 0,
+        'members': False,
+        'noteable': True,
+        'tradeable': False,  # double check this
+        'tradeable_on_ge': False
+    },
+    'Zaryte crossbow': {
+        'buy_limit': None,
+        'cost': 40,
+        'highalch': 0,
+        'id': 27186,
+        'linked_id_noted': 0,
+        'linked_id_placeholder': None,
+        'lowalch': 0,
+        'members': False,
+        'noteable': True,
+        'tradeable': False,  # double check this
+        'tradeable_on_ge': False
+    }
 }
 
 items = items_api.load()
@@ -866,6 +868,8 @@ test_items = [item for item in items if getattr(item, "id") and getattr(item, "i
 compare_items(23605, 21795, items)  # imbued zammy cape
 compare_items(9243, 23649, items)   # diamond bolts (e)
 compare_items(7462, 23593, items)   # barrows gloves
+
+pprinter.pprint(asdict(items.lookup_by_item_id(23594)))
 
 # Get list of all items with name match to lms_item_names list
 # lms_items = [x for x in items if x.name in lms_item_names]
@@ -888,4 +892,18 @@ compare_items(7462, 23593, items)   # barrows gloves
 
 
 # Create new LMS items
+# get 3rd age mage hat item
+third_age_mage_hat = items.lookup_by_item_id(10342)
+# create lmsitem object for 3rd age mage hat
+lms_third_age_mage_hat = LmsItem(**lms_items_without_wiki_page["3rd age mage hat"])
 
+# create ItemProperties of "3rd age mage hat" for lms version
+fixed_third_age_mage_hat = create_lms_item(third_age_mage_hat, lms_third_age_mage_hat)
+pprinter.pprint(fixed_third_age_mage_hat)
+
+dict1 = asdict(third_age_mage_hat)
+dict2 = asdict(fixed_third_age_mage_hat)
+differences = {key: (dict1[key], dict2[key])
+                 for key in dict1 if dict1[key] != dict2[key]}
+
+pprinter.pprint(differences)
