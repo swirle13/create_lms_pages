@@ -11,7 +11,7 @@
 |equipable = Yes
 |stackable = No
 |noteable = Yes
-|options = Wield, Drop   # TODO: Update this
+|options = {{ item.options }}
 |examine = {{ item.examine }}
 |value = {{ item.cost }}
 |alchable = No
@@ -46,16 +46,16 @@
 |image = [[File:{{ item.name }} equipped male.png|160px]]
 |altimage = [[File:{{ item.name }} equipped female.png|160px]]
 {{ '}}' }}
+{%- if item.weapon %}
 
-{% if item.weapon -%}
 {{ '{{CombatStyles|' }}{{ item.weapon.weapon_type }}{{ '|speed=' }}{{ item.weapon.attack_speed }}{{ '|attackrange=' }}{{ item.attack_range }}{{ '}}' }}
 
 ==Special attack==
 # TODO: copy/paste from [[{{ item.name }}]]
 {%- endif -%}
+{%- raw %}
 
 ==Changes==
-{%- raw %}
 # TODO: Update this
 {{Subject changes header}}
 {{Subject changes

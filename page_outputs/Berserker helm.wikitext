@@ -11,7 +11,7 @@ https://oldschool.runescape.wiki/w/Berserker_helm_(Last_Man_Standing)
 |equipable = Yes
 |stackable = No
 |noteable = Yes
-|options = Wield, Drop   # TODO: Update this
+|options = Wear, Drop
 |examine = This helmet is worn by berserkers.
 |value = 1
 |alchable = No

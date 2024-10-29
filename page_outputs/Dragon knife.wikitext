@@ -11,7 +11,7 @@ https://oldschool.runescape.wiki/w/Dragon_knife#Unpoisoned_(Last_Man_Standing)
 |equipable = Yes
 |stackable = No
 |noteable = Yes
-|options = Wield, Drop   # TODO: Update this
+|options = Wield, Drop
 |examine = A finely balanced and powerful throwing knife.
 |value = 5
 |alchable = No
@@ -48,7 +48,9 @@ https://oldschool.runescape.wiki/w/Dragon_knife#Unpoisoned_(Last_Man_Standing)
 {{CombatStyles|thrown|speed=3|attackrange=4}}
 
 ==Special attack==
-# TODO: copy/paste from [[Dragon knife]]==Changes==
+# TODO: copy/paste from [[Dragon knife]]
+
+==Changes==
 # TODO: Update this
 {{Subject changes header}}
 {{Subject changes

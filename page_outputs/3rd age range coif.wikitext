@@ -11,7 +11,7 @@ https://oldschool.runescape.wiki/w/3rd_age_range_coif_(Last_Man_Standing)
 |equipable = Yes
 |stackable = No
 |noteable = Yes
-|options = Wield, Drop   # TODO: Update this
+|options = Wear, Drop
 |examine = Fabulously ancient range protection crafted from white dragonhide.
 |value = 20
 |alchable = No

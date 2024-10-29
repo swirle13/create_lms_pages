@@ -11,7 +11,7 @@ https://oldschool.runescape.wiki/w/Infinity_boots_(Last_Man_Standing)
 |equipable = Yes
 |stackable = No
 |noteable = Yes
-|options = Wield, Drop   # TODO: Update this
+|options = Wear, Drop
 |examine = Mystical boots.
 |value = 10
 |alchable = No

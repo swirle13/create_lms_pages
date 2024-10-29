@@ -121,7 +121,7 @@ def create_template(item: ItemProperties):
   # check if weapon, create attack range key/value
   if item.weapon:
     item_range = 0
-    if item.weapon.weapon_type in ["2h sword", "axe", "blaster", "bludgeon", "blunt", "claw", "pickaxe", "polearm", "polestaff", "powered staff", "scythe", "slash sword", "spear", "spiked", "stab sword", "whip"]:
+    if item.weapon.weapon_type in ["2h sword", "2h_sword", "axe", "blaster", "bludgeon", "blunt", "claw", "pickaxe", "polearm", "polestaff", "powered staff", "scythe", "slash sword", "spear", "spiked", "stab sword", "whip"]:
       item_range = 1
     if item.weapon.weapon_type in ["bow", "crossbow"]:
       item_range = 9
@@ -137,6 +137,12 @@ def create_template(item: ItemProperties):
     print(f"{item.release_date} is before 4 August 2016")
     item_dict["release_date"] = "2016-08-04"
   item_dict["release_date"] = convert_date_format(item_dict["release_date"])
+    
+  # set the item options: "Wield, Drop" if a weapon, "Wear, Drop" if armor
+  if item.equipable_weapon:
+    item_dict["options"] = "Wield, Drop"
+  else:
+    item_dict["options"] = "Wear, Drop"
 
   output = template.render(item=item_dict)
   with open(f"./page_outputs/{item.name}.wikitext", "w") as f:

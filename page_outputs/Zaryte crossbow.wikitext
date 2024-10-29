@@ -11,7 +11,7 @@ https://oldschool.runescape.wiki/w/Zaryte_crossbow_(Last_Man_Standing)
 |equipable = Yes
 |stackable = No
 |noteable = Yes
-|options = Wield, Drop   # TODO: Update this
+|options = Wield, Drop
 |examine = A weapon born out of conflict.
 |value = 40
 |alchable = No
@@ -48,7 +48,9 @@ https://oldschool.runescape.wiki/w/Zaryte_crossbow_(Last_Man_Standing)
 {{CombatStyles|crossbow|speed=6|attackrange=9}}
 
 ==Special attack==
-# TODO: copy/paste from [[Zaryte crossbow]]==Changes==
+# TODO: copy/paste from [[Zaryte crossbow]]
+
+==Changes==
 # TODO: Update this
 {{Subject changes header}}
 {{Subject changes

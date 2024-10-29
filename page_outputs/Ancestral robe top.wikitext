@@ -11,7 +11,7 @@ https://oldschool.runescape.wiki/w/Ancestral_robe_top_(Last_Man_Standing)
 |equipable = Yes
 |stackable = No
 |noteable = Yes
-|options = Wield, Drop   # TODO: Update this
+|options = Wear, Drop
 |examine = The robe top of a powerful sorceress from a bygone era.
 |value = 55
 |alchable = No

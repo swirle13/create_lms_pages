@@ -11,7 +11,7 @@ https://oldschool.runescape.wiki/w/Inquisitor's_mace_(Last_Man_Standing)
 |equipable = Yes
 |stackable = No
 |noteable = Yes
-|options = Wield, Drop   # TODO: Update this
+|options = Wield, Drop
 |examine = A powerful mace once wielded by the turncloak justiciar.
 |value = 20
 |alchable = No
@@ -48,7 +48,9 @@ https://oldschool.runescape.wiki/w/Inquisitor's_mace_(Last_Man_Standing)
 {{CombatStyles|spiked|speed=4|attackrange=1}}
 
 ==Special attack==
-# TODO: copy/paste from [[Inquisitor's mace]]==Changes==
+# TODO: copy/paste from [[Inquisitor's mace]]
+
+==Changes==
 # TODO: Update this
 {{Subject changes header}}
 {{Subject changes

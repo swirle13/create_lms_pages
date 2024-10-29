@@ -11,7 +11,7 @@ https://oldschool.runescape.wiki/w/Black_d'hide_chaps_(Last_Man_Standing)
 |equipable = Yes
 |stackable = No
 |noteable = Yes
-|options = Wield, Drop   # TODO: Update this
+|options = Wear, Drop
 |examine = Made from 100% real dragonhide.
 |value = 30
 |alchable = No

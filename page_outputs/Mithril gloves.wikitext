@@ -11,7 +11,7 @@ https://oldschool.runescape.wiki/w/Mithril_gloves_(Last_Man_Standing)
 |equipable = Yes
 |stackable = No
 |noteable = Yes
-|options = Wield, Drop   # TODO: Update this
+|options = Wear, Drop
 |examine = A pair of nice gloves.
 |value = 350
 |alchable = No

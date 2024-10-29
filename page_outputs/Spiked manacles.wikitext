@@ -11,7 +11,7 @@ https://oldschool.runescape.wiki/w/Spiked_manacles_(Last_Man_Standing)
 |equipable = Yes
 |stackable = No
 |noteable = Yes
-|options = Wield, Drop   # TODO: Update this
+|options = Wear, Drop
 |examine = Some very spikey metal bands, better make sure I don't cut myself while walking.
 |value = 10
 |alchable = No

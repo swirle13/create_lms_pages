@@ -11,7 +11,7 @@ https://oldschool.runescape.wiki/w/Wizard_boots_(Last_Man_Standing)
 |equipable = Yes
 |stackable = No
 |noteable = Yes
-|options = Wield, Drop   # TODO: Update this
+|options = Wear, Drop
 |examine = Slightly magical boots.
 |value = 5
 |alchable = No

@@ -11,7 +11,7 @@ https://oldschool.runescape.wiki/w/Ghostly_hood_(Last_Man_Standing)
 |equipable = Yes
 |stackable = No
 |noteable = Yes
-|options = Wield, Drop   # TODO: Update this
+|options = Wear, Drop
 |examine = A ghostly hood, fit for a ghostly head.
 |value = 1
 |alchable = No

@@ -11,7 +11,7 @@ https://oldschool.runescape.wiki/w/Tormented_bracelet_(Last_Man_Standing)
 |equipable = Yes
 |stackable = No
 |noteable = Yes
-|options = Wield, Drop   # TODO: Update this
+|options = Wear, Drop
 |examine = A deep sense of torment burns within this powerful bracelet.
 |value = 10
 |alchable = No

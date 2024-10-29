@@ -11,7 +11,7 @@ https://oldschool.runescape.wiki/w/Elder_chaos_robe_(Last_Man_Standing)
 |equipable = Yes
 |stackable = No
 |noteable = Yes
-|options = Wield, Drop   # TODO: Update this
+|options = Wear, Drop
 |examine = The robes worn by the dangerous elder druids.
 |value = 10
 |alchable = No

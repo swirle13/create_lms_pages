@@ -11,7 +11,7 @@ https://oldschool.runescape.wiki/w/Ancient_godsword_(Last_Man_Standing)
 |equipable = Yes
 |stackable = No
 |noteable = Yes
-|options = Wield, Drop   # TODO: Update this
+|options = Wield, Drop
 |examine = A mysterious, heavy sword.
 |value = 40
 |alchable = No
@@ -39,16 +39,18 @@ https://oldschool.runescape.wiki/w/Ancient_godsword_(Last_Man_Standing)
 |prayer = 8
 |slot = 2h
 |speed = 6
-|attackrange = 0
+|attackrange = 1
 |combatstyle = 2h_sword
 |image = [[File:Ancient godsword equipped male.png|160px]]
 |altimage = [[File:Ancient godsword equipped female.png|160px]]
 }}
 
-{{CombatStyles|2h_sword|speed=6|attackrange=0}}
+{{CombatStyles|2h_sword|speed=6|attackrange=1}}
 
 ==Special attack==
-# TODO: copy/paste from [[Ancient godsword]]==Changes==
+# TODO: copy/paste from [[Ancient godsword]]
+
+==Changes==
 # TODO: Update this
 {{Subject changes header}}
 {{Subject changes

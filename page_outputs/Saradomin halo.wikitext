@@ -11,7 +11,7 @@ https://oldschool.runescape.wiki/w/Saradomin_halo#Normal_(Last_Man_Standing)
 |equipable = Yes
 |stackable = No
 |noteable = Yes
-|options = Wield, Drop   # TODO: Update this
+|options = Wear, Drop
 |examine = Halo with the protection of Saradomin.
 |value = 5
 |alchable = No

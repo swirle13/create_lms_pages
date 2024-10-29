@@ -11,7 +11,7 @@ https://oldschool.runescape.wiki/w/Mystic_robe_top_(dark)_(Last_Man_Standing)
 |equipable = Yes
 |stackable = No
 |noteable = Yes
-|options = Wield, Drop   # TODO: Update this
+|options = Wear, Drop
 |examine = The upper half of a dark magical robe.
 |value = 1
 |alchable = No

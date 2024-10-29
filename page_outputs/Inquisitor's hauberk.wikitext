@@ -11,7 +11,7 @@ https://oldschool.runescape.wiki/w/Inquisitor's_hauberk_(Last_Man_Standing)
 |equipable = Yes
 |stackable = No
 |noteable = Yes
-|options = Wield, Drop   # TODO: Update this
+|options = Wear, Drop
 |examine = The hauberk of the turncloak justiciar.
 |value = 20
 |alchable = No
