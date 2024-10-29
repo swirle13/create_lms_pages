@@ -1,0 +1,63 @@
+https://oldschool.runescape.wiki/w/Ancient_staff_(Last_Man_Standing)
+{{Infobox Item
+|name = Ancient staff
+|image = [[File:Ancient staff (Last Man Standing).png]]
+|release = [[4 August]] [[2016]]
+|update = Last Man Standing Beta and Splashing Restrictions  # TODO: Update this
+|members = No
+|quest = No
+|tradeable = No
+|placeholder = No
+|equipable = Yes
+|stackable = No
+|noteable = Yes
+|options = Wield, Drop
+|examine = A magical staff of ancient origin...
+|value = 40
+|alchable = No
+|weight = 2.267
+|id = 20431
+}}
+[[File:Ancient staff (Last Man Standing) detail.png|160px|left]]
+'''Ancient staff''' from [[Last Man Standing]] is a minigame-exclusive variant of the normal [[Ancient staff (Last Man Standing)]]. It can be obtained from opening the [[Chest (Last Man Standing)|chests]] with a [[bloody key]], or looting the [[Crate (Last Man Standing)|crates]] that spawn at random locations on the map. It is dropped on death to whoever killed you.
+
+==Combat stats==
+{{Infobox Bonuses
+|astab = 10
+|aslash = -1
+|acrush = 40
+|amagic = 15
+|arange = 0
+|dstab = 2
+|dslash = 3
+|dcrush = 1
+|dmagic = 15
+|drange = 0
+|str = 50
+|rstr = 0
+|mdmg = 0
+|prayer = -1
+|slot = weapon
+|speed = 4
+|attackrange = staff
+|combatstyle = staff
+|image = [[File:Ancient staff (Last Man Standing) equipped male.png|160px]]
+|altimage = [[File:Ancient staff (Last Man Standing) equipped female.png|160px]]
+}}
+
+{{CombatStyles|staff|speed=4|attackrange=staff}}
+
+==Special attack==
+# TODO: copy/paste from [[Ancient staff]]
+
+==Changes==
+# TODO: Update this
+{{Subject changes header}}
+{{Subject changes
+|date = 4 August 2016
+|update = Last Man Standing
+|change = The item was made fully available with the release of Last Man Standing.
+}}
+{{Subject changes footer}}
+
+{{Last Man Standing In-game Items}}

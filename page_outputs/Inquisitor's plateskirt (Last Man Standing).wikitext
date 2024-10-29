@@ -1,0 +1,55 @@
+https://oldschool.runescape.wiki/w/Inquisitor's_plateskirt_(Last_Man_Standing)
+{{Infobox Item
+|name = Inquisitor's plateskirt
+|image = [[File:Inquisitor's plateskirt (Last Man Standing).png]]
+|release = [[6 February]] [[2020]]
+|update = Last Man Standing Beta and Splashing Restrictions  # TODO: Update this
+|members = No
+|quest = No
+|tradeable = No
+|placeholder = No
+|equipable = Yes
+|stackable = No
+|noteable = Yes
+|options = Wear, Drop
+|examine = The plateskirt of the turncloak justiciar.
+|value = 20
+|alchable = No
+|weight = 9.071
+|id = 27197
+}}
+[[File:Inquisitor's plateskirt (Last Man Standing) detail.png|160px|left]]
+'''Inquisitor's plateskirt''' from [[Last Man Standing]] is a minigame-exclusive variant of the normal [[Inquisitor's plateskirt (Last Man Standing)]]. It can be obtained from opening the [[Chest (Last Man Standing)|chests]] with a [[bloody key]], or looting the [[Crate (Last Man Standing)|crates]] that spawn at random locations on the map. It is dropped on death to whoever killed you.
+
+==Combat stats==
+{{Infobox Bonuses
+|astab = -3
+|aslash = -3
+|acrush = 12
+|amagic = -9
+|arange = -5
+|dstab = 42
+|dslash = 30
+|dcrush = 49
+|dmagic = 0
+|drange = 22
+|str = 2
+|rstr = 0
+|mdmg = 0
+|prayer = 2
+|slot = legs
+|image = [[File:Inquisitor's plateskirt (Last Man Standing) equipped male.png|160px]]
+|altimage = [[File:Inquisitor's plateskirt (Last Man Standing) equipped female.png|160px]]
+}}
+
+==Changes==
+# TODO: Update this
+{{Subject changes header}}
+{{Subject changes
+|date = 4 August 2016
+|update = Last Man Standing
+|change = The item was made fully available with the release of Last Man Standing.
+}}
+{{Subject changes footer}}
+
+{{Last Man Standing In-game Items}}

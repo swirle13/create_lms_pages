@@ -1,0 +1,55 @@
+https://oldschool.runescape.wiki/w/Unholy_book_(Last_Man_Standing)
+{{Infobox Item
+|name = Unholy book
+|image = [[File:Unholy book (Last Man Standing).png]]
+|release = [[4 August]] [[2016]]
+|update = Last Man Standing Beta and Splashing Restrictions  # TODO: Update this
+|members = No
+|quest = No
+|tradeable = No
+|placeholder = No
+|equipable = Yes
+|stackable = No
+|noteable = Yes
+|options = Wear, Drop
+|examine = The unholy book of Zamorak.
+|value = 1
+|alchable = No
+|weight = 1.0
+|id = 27191
+}}
+[[File:Unholy book (Last Man Standing) detail.png|160px|left]]
+'''Unholy book''' from [[Last Man Standing]] is a minigame-exclusive variant of the normal [[Unholy book (Last Man Standing)]]. It can be obtained from opening the [[Chest (Last Man Standing)|chests]] with a [[bloody key]], or looting the [[Crate (Last Man Standing)|crates]] that spawn at random locations on the map. It is dropped on death to whoever killed you.
+
+==Combat stats==
+{{Infobox Bonuses
+|astab = 8
+|aslash = 8
+|acrush = 8
+|amagic = 8
+|arange = 8
+|dstab = 0
+|dslash = 0
+|dcrush = 0
+|dmagic = 0
+|drange = 0
+|str = 0
+|rstr = 0
+|mdmg = 0
+|prayer = 5
+|slot = shield
+|image = [[File:Unholy book (Last Man Standing) equipped male.png|160px]]
+|altimage = [[File:Unholy book (Last Man Standing) equipped female.png|160px]]
+}}
+
+==Changes==
+# TODO: Update this
+{{Subject changes header}}
+{{Subject changes
+|date = 4 August 2016
+|update = Last Man Standing
+|change = The item was made fully available with the release of Last Man Standing.
+}}
+{{Subject changes footer}}
+
+{{Last Man Standing In-game Items}}

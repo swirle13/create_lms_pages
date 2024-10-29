@@ -1,0 +1,55 @@
+https://oldschool.runescape.wiki/w/Elder_chaos_top_(Last_Man_Standing)
+{{Infobox Item
+|name = Elder chaos top
+|image = [[File:Elder chaos top (Last Man Standing).png]]
+|release = [[4 August]] [[2016]]
+|update = Last Man Standing Beta and Splashing Restrictions  # TODO: Update this
+|members = No
+|quest = No
+|tradeable = No
+|placeholder = No
+|equipable = Yes
+|stackable = No
+|noteable = Yes
+|options = Wear, Drop
+|examine = The robes worn by the dangerous elder druids.
+|value = 10
+|alchable = No
+|weight = 0.2
+|id = 27174
+}}
+[[File:Elder chaos top (Last Man Standing) detail.png|160px|left]]
+'''Elder chaos top''' from [[Last Man Standing]] is a minigame-exclusive variant of the normal [[Elder chaos top (Last Man Standing)]]. It can be obtained from opening the [[Chest (Last Man Standing)|chests]] with a [[bloody key]], or looting the [[Crate (Last Man Standing)|crates]] that spawn at random locations on the map. It is dropped on death to whoever killed you.
+
+==Combat stats==
+{{Infobox Bonuses
+|astab = 0
+|aslash = 0
+|acrush = 0
+|amagic = 10
+|arange = 0
+|dstab = 0
+|dslash = 0
+|dcrush = 0
+|dmagic = 8
+|drange = 0
+|str = 0
+|rstr = 0
+|mdmg = 1
+|prayer = 0
+|slot = body
+|image = [[File:Elder chaos top (Last Man Standing) equipped male.png|160px]]
+|altimage = [[File:Elder chaos top (Last Man Standing) equipped female.png|160px]]
+}}
+
+==Changes==
+# TODO: Update this
+{{Subject changes header}}
+{{Subject changes
+|date = 4 August 2016
+|update = Last Man Standing
+|change = The item was made fully available with the release of Last Man Standing.
+}}
+{{Subject changes footer}}
+
+{{Last Man Standing In-game Items}}

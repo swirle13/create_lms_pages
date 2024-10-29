@@ -1,0 +1,63 @@
+https://oldschool.runescape.wiki/w/Dragon_knife_(Last_Man_Standing)
+{{Infobox Item
+|name = Dragon knife
+|image = [[File:Dragon knife (Unpoisoned) (Last Man Standing).png]]
+|release = [[10 January]] [[2019]]
+|update = Last Man Standing Beta and Splashing Restrictions  # TODO: Update this
+|members = No
+|quest = No
+|tradeable = No
+|placeholder = No
+|equipable = Yes
+|stackable = No
+|noteable = Yes
+|options = Wield, Drop
+|examine = A finely balanced and powerful throwing knife.
+|value = 5
+|alchable = No
+|weight = 0.0
+|id = 27157
+}}
+[[File:Dragon knife (Unpoisoned) (Last Man Standing) detail.png|160px|left]]
+'''Dragon knife''' from [[Last Man Standing]] is a minigame-exclusive variant of the normal [[Dragon knife (Unpoisoned) (Last Man Standing)]]. It can be obtained from opening the [[Chest (Last Man Standing)|chests]] with a [[bloody key]], or looting the [[Crate (Last Man Standing)|crates]] that spawn at random locations on the map. It is dropped on death to whoever killed you.
+
+==Combat stats==
+{{Infobox Bonuses
+|astab = 0
+|aslash = 0
+|acrush = 0
+|amagic = 0
+|arange = 28
+|dstab = 0
+|dslash = 0
+|dcrush = 0
+|dmagic = 0
+|drange = 0
+|str = 0
+|rstr = 30
+|mdmg = 0
+|prayer = 0
+|slot = weapon
+|speed = 3
+|attackrange = 4
+|combatstyle = thrown
+|image = [[File:Dragon knife (Unpoisoned) (Last Man Standing) equipped male.png|160px]]
+|altimage = [[File:Dragon knife (Unpoisoned) (Last Man Standing) equipped female.png|160px]]
+}}
+
+{{CombatStyles|thrown|speed=3|attackrange=4}}
+
+==Special attack==
+# TODO: copy/paste from [[Dragon knife]]
+
+==Changes==
+# TODO: Update this
+{{Subject changes header}}
+{{Subject changes
+|date = 4 August 2016
+|update = Last Man Standing
+|change = The item was made fully available with the release of Last Man Standing.
+}}
+{{Subject changes footer}}
+
+{{Last Man Standing In-game Items}}

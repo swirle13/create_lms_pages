@@ -1,7 +1,7 @@
 {{ item.wiki_url }}
 {{ '{{Infobox Item' }}
 |name = {{ item.name }}
-|image = [[File:{{ item.name }} (Last Man Standing).png]]
+|image = [[File:{{ item.wiki_name }}.png]]
 |release = {{ item.release_date }}
 |update = Last Man Standing Beta and Splashing Restrictions  # TODO: Update this
 |members = No
@@ -18,8 +18,8 @@
 |weight = {{ item.weight }}
 |id = {{ item.id }}
 {{ '}}' }}
-[[File:{{ item.name }} (Last Man Standing) detail.png|160px|left]]
-'''{{ item.name }}''' from [[Last Man Standing]] is a minigame-exclusive variant of the normal [[{{ item.name }}]]. It can be obtained from opening the [[Chest (Last Man Standing)|chests]] with a [[bloody key]], or looting the [[Crate (Last Man Standing)|crates]] that spawn at random locations on the map. It is dropped on death to whoever killed you.
+[[File:{{ item.wiki_name }} detail.png|160px|left]]
+'''{{ item.name }}''' from [[Last Man Standing]] is a minigame-exclusive variant of the normal [[{{ item.wiki_name }}]]. It can be obtained from opening the [[Chest (Last Man Standing)|chests]] with a [[bloody key]], or looting the [[Crate (Last Man Standing)|crates]] that spawn at random locations on the map. It is dropped on death to whoever killed you.
 
 ==Combat stats==
 {{'{{Infobox Bonuses'}}
@@ -43,8 +43,8 @@
 |attackrange = {{ item.attack_range }}
 |combatstyle = {{ item.weapon.weapon_type.replace("_", " ") }}
 {%- endif %}
-|image = [[File:{{ item.name }} equipped male.png|160px]]
-|altimage = [[File:{{ item.name }} equipped female.png|160px]]
+|image = [[File:{{ item.wiki_name }} equipped male.png|160px]]
+|altimage = [[File:{{ item.wiki_name }} equipped female.png|160px]]
 {{ '}}' }}
 {%- if item.weapon %}
 

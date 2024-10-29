@@ -1,0 +1,55 @@
+https://oldschool.runescape.wiki/w/Inquisitor's_great_helm_(Last_Man_Standing)
+{{Infobox Item
+|name = Inquisitor's great helm
+|image = [[File:Inquisitor's great helm (Last Man Standing).png]]
+|release = [[6 February]] [[2020]]
+|update = Last Man Standing Beta and Splashing Restrictions  # TODO: Update this
+|members = No
+|quest = No
+|tradeable = No
+|placeholder = No
+|equipable = Yes
+|stackable = No
+|noteable = Yes
+|options = Wear, Drop
+|examine = The great helmet of the turncloak justiciar.
+|value = 20
+|alchable = No
+|weight = 2.721
+|id = 27195
+}}
+[[File:Inquisitor's great helm (Last Man Standing) detail.png|160px|left]]
+'''Inquisitor's great helm''' from [[Last Man Standing]] is a minigame-exclusive variant of the normal [[Inquisitor's great helm (Last Man Standing)]]. It can be obtained from opening the [[Chest (Last Man Standing)|chests]] with a [[bloody key]], or looting the [[Crate (Last Man Standing)|crates]] that spawn at random locations on the map. It is dropped on death to whoever killed you.
+
+==Combat stats==
+{{Infobox Bonuses
+|astab = -2
+|aslash = -2
+|acrush = 8
+|amagic = -5
+|arange = -5
+|dstab = 19
+|dslash = 10
+|dcrush = 21
+|dmagic = 0
+|drange = 12
+|str = 4
+|rstr = 0
+|mdmg = 0
+|prayer = 1
+|slot = head
+|image = [[File:Inquisitor's great helm (Last Man Standing) equipped male.png|160px]]
+|altimage = [[File:Inquisitor's great helm (Last Man Standing) equipped female.png|160px]]
+}}
+
+==Changes==
+# TODO: Update this
+{{Subject changes header}}
+{{Subject changes
+|date = 4 August 2016
+|update = Last Man Standing
+|change = The item was made fully available with the release of Last Man Standing.
+}}
+{{Subject changes footer}}
+
+{{Last Man Standing In-game Items}}

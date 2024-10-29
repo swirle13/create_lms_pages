@@ -94,6 +94,16 @@ def compare_items(item1: ItemProperties, item2: ItemProperties, items: AllItems)
 
 def create_lms_item(original_item: ItemProperties, lms_item: LmsItem) -> ItemProperties:
   '''Create a new LMS variant of an item, given an existing ItemProperties obj.'''
+  # create separate case for ghostly robe as both top and bottom item.names are "Ghostly robe"
+  if "Ghostly robe" in original_item.wiki_name:
+    lms_object = replace(original_item,
+                         name=original_item.wiki_name,
+                         wiki_name=original_item.wiki_name + " (Last Man Standing)",
+                         # Split and remove any subsections from the wiki_url, e.g. Dragon_knife#Unpoisoned -> Dragon_knife
+                         wiki_url=original_item.wiki_url.split("#", 1)[0] + "_(Last_Man_Standing)",
+                         **asdict(lms_item)
+                        )
+    
   lms_object = replace(original_item,
                        wiki_name=original_item.wiki_name + " (Last Man Standing)",
                        # Split and remove any subsections from the wiki_url, e.g. Dragon_knife#Unpoisoned -> Dragon_knife
@@ -146,7 +156,7 @@ def create_template(item: ItemProperties):
     item_dict["options"] = "Wear, Drop"
 
   output = template.render(item=item_dict)
-  with open(f"./page_outputs/{item.name}.wikitext", "w") as f:
+  with open(f"./page_outputs/{item.wiki_name}.wikitext", "w") as f:
     f.write(output)
 
 
@@ -281,7 +291,7 @@ lms_item_names = [
     "Unholy book",
     # leg slot
     "Black d'hide chaps",
-    "Ghostly robe",
+    "Ghostly robe (bottom)",
     "Mystic robe bottom",
     "Mystic robe bottom (dark)",
     "Mystic robe bottom (light)",
@@ -545,7 +555,7 @@ lms_items_without_wiki_page = {
         'tradeable': False,  # double check this
         'tradeable_on_ge': False
     },
-    'Ghostly robe': {
+    'Ghostly robe (bottom)': {
         'buy_limit': None,
         'cost': 1,
         'highalch': 0,
@@ -942,7 +952,8 @@ for name, data in lms_items_without_wiki_page.items():
   temp = LmsItem(**data)
   
   # enable wiki name for ghostly robe top because of name collision with ghostly robe bottoms
-  if name == "Ghostly robe (top)":
+  # TODO: investigate why this isn't creating two separate page files
+  if name in ["Ghostly robe (top)", "Ghostly robe (bottom)"]:
     original_item = items.lookup_by_item_name(name, True)
   else:
     original_item = items.lookup_by_item_name(name)

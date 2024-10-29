@@ -1,0 +1,55 @@
+https://oldschool.runescape.wiki/w/3rd_age_range_legs_(Last_Man_Standing)
+{{Infobox Item
+|name = 3rd age range legs
+|image = [[File:3rd age range legs (Last Man Standing).png]]
+|release = [[4 August]] [[2016]]
+|update = Last Man Standing Beta and Splashing Restrictions  # TODO: Update this
+|members = No
+|quest = No
+|tradeable = No
+|placeholder = No
+|equipable = Yes
+|stackable = No
+|noteable = Yes
+|options = Wear, Drop
+|examine = Fabulously ancient range protection crafted from white dragonhide.
+|value = 20
+|alchable = No
+|weight = 3.0
+|id = 27200
+}}
+[[File:3rd age range legs (Last Man Standing) detail.png|160px|left]]
+'''3rd age range legs''' from [[Last Man Standing]] is a minigame-exclusive variant of the normal [[3rd age range legs (Last Man Standing)]]. It can be obtained from opening the [[Chest (Last Man Standing)|chests]] with a [[bloody key]], or looting the [[Crate (Last Man Standing)|crates]] that spawn at random locations on the map. It is dropped on death to whoever killed you.
+
+==Combat stats==
+{{Infobox Bonuses
+|astab = 0
+|aslash = 0
+|acrush = 0
+|amagic = -10
+|arange = 17
+|dstab = 31
+|dslash = 25
+|dcrush = 33
+|dmagic = 30
+|drange = 31
+|str = 0
+|rstr = 0
+|mdmg = 0
+|prayer = 0
+|slot = legs
+|image = [[File:3rd age range legs (Last Man Standing) equipped male.png|160px]]
+|altimage = [[File:3rd age range legs (Last Man Standing) equipped female.png|160px]]
+}}
+
+==Changes==
+# TODO: Update this
+{{Subject changes header}}
+{{Subject changes
+|date = 4 August 2016
+|update = Last Man Standing
+|change = The item was made fully available with the release of Last Man Standing.
+}}
+{{Subject changes footer}}
+
+{{Last Man Standing In-game Items}}
