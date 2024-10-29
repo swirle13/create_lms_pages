@@ -11,7 +11,7 @@ https://oldschool.runescape.wiki/w/Opal_dragon_bolts_(e)_(Last_Man_Standing)
 |equipable = Yes
 |stackable = No
 |noteable = Yes
-|options = Wear, Drop
+|options = Wield, Drop
 |examine = Enchanted Dragon crossbow bolts, tipped with opal.
 |value = 1
 |alchable = No
@@ -23,21 +23,21 @@ https://oldschool.runescape.wiki/w/Opal_dragon_bolts_(e)_(Last_Man_Standing)
 
 ==Combat stats==
 {{Infobox Bonuses
-|astab = 
-|aslash = 
-|acrush = 
-|amagic = 
-|arange = 
-|dstab = 
-|dslash = 
-|dcrush = 
-|dmagic = 
-|drange = 
-|str = 
-|rstr = 
-|mdmg = 
-|prayer = 
-|slot = 
+|astab = 0
+|aslash = 0
+|acrush = 0
+|amagic = 0
+|arange = 0
+|dstab = 0
+|dslash = 0
+|dcrush = 0
+|dmagic = 0
+|drange = 0
+|str = 0
+|rstr = 122
+|mdmg = 0
+|prayer = 0
+|slot = ammo
 |image = [[File:Opal dragon bolts (e) (Last Man Standing) equipped male.png|160px]]
 |altimage = [[File:Opal dragon bolts (e) (Last Man Standing) equipped female.png|160px]]
 }}

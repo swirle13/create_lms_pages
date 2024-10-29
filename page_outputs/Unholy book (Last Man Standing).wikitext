@@ -11,7 +11,7 @@ https://oldschool.runescape.wiki/w/Unholy_book_(Last_Man_Standing)
 |equipable = Yes
 |stackable = No
 |noteable = Yes
-|options = Wear, Drop
+|options = Wield, Drop
 |examine = The unholy book of Zamorak.
 |value = 1
 |alchable = No

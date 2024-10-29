@@ -11,7 +11,7 @@ https://oldschool.runescape.wiki/w/Rune_defender_(Last_Man_Standing)
 |equipable = Yes
 |stackable = No
 |noteable = Yes
-|options = Wear, Drop
+|options = Wield, Drop
 |examine = A defensive weapon.
 |value = 3
 |alchable = No

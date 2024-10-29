@@ -96,7 +96,6 @@ def create_lms_item(original_item: ItemProperties, lms_item: LmsItem) -> ItemPro
   '''Create a new LMS variant of an item, given an existing ItemProperties obj.'''
   # create separate case for ghostly robe as both top and bottom item.names are "Ghostly robe"
   if "Ghostly robe" in original_item.wiki_name:
-    print(f"Ghostly robe found: {original_item.wiki_name}")
     lms_object = replace(original_item,
                          name=original_item.wiki_name,
                          wiki_name=original_item.wiki_name + " (Last Man Standing)",
@@ -111,6 +110,7 @@ def create_lms_item(original_item: ItemProperties, lms_item: LmsItem) -> ItemPro
                          wiki_url=original_item.wiki_url.split("#", 1)[0] + "_(Last_Man_Standing)",
                          **asdict(lms_item)
                         )
+    print(f"Created lms object: {lms_object}")
   return lms_object
 
 
@@ -151,7 +151,9 @@ def create_template(item: ItemProperties):
   item_dict["release_date"] = convert_date_format(item_dict["release_date"])
     
   # set the item options: "Wield, Drop" if a weapon, "Wear, Drop" if armor
-  if item.equipable_weapon:
+  if item.equipable_weapon or \
+    (item.stackable and item.equipment.slot == "ammo") or \
+    (item.equipable and item.equipment.slot == "shield"):
     item_dict["options"] = "Wield, Drop"
   else:
     item_dict["options"] = "Wear, Drop"
@@ -928,11 +930,11 @@ items = items_api.load()
 # compare_items(9243, 23649, items)   # diamond bolts (e)
 # compare_items(7462, 23593, items)   # barrows gloves
 
-# pprinter.pprint(items.lookup_by_item_name('Spiked manacles'))
-
 # cut this list down to only the normal version of each item and store in lms_items
 # get_all_matching_items(items, lms_item_names)
-# pprinter.pprint(items.lookup_by_item_name("Dragon knife"))
+
+# ad hoc search for items when item issues arise
+# get_all_matching_items(items, ["Opal dragon bolts"])
 
 # Get list of all existing wiki pages for LMS items
 lms_wiki_pages = [x for x in items if getattr(x, "wiki_name", "") and
@@ -956,6 +958,8 @@ for name, data in lms_items_without_wiki_page.items():
   # TODO: investigate why this isn't creating two separate page files
   if name in ["Ghostly robe (top)", "Ghostly robe (bottom)"]:
     original_item = items.lookup_by_item_name(name, True)
+  elif name == "Opal dragon bolts (e)":
+    original_item = items.lookup_by_item_id(21932)
   else:
     original_item = items.lookup_by_item_name(name)
   lms_item = create_lms_item(original_item, temp)
