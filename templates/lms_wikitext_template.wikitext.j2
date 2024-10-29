@@ -1,6 +1,10 @@
 {{ item.wiki_url }}
 {{ '{{Infobox Item' }}
+{% if "Ghostly robe" in item.name -%}
+|name = {{ item.name.split(" (")[0] }}
+{% else -%}
 |name = {{ item.name }}
+{% endif -%}
 |image = [[File:{{ item.wiki_name }}.png]]
 |release = {{ item.release_date }}
 |update = Last Man Standing Beta and Splashing Restrictions  # TODO: Update this
@@ -19,7 +23,7 @@
 |id = {{ item.id }}
 {{ '}}' }}
 [[File:{{ item.wiki_name }} detail.png|160px|left]]
-'''{{ item.name }}''' from [[Last Man Standing]] is a minigame-exclusive variant of the normal [[{{ item.wiki_name }}]]. It can be obtained from opening the [[Chest (Last Man Standing)|chests]] with a [[bloody key]], or looting the [[Crate (Last Man Standing)|crates]] that spawn at random locations on the map. It is dropped on death to whoever killed you.
+'''{{ item.name }}''' from [[Last Man Standing]] is a minigame-exclusive variant of the normal [[{{ item.name }}]]. It can be obtained from opening the [[Chest (Last Man Standing)|chests]] with a [[bloody key]], or looting the [[Crate (Last Man Standing)|crates]] that spawn at random locations on the map. It is dropped on death to whoever killed you.
 
 ==Combat stats==
 {{'{{Infobox Bonuses'}}

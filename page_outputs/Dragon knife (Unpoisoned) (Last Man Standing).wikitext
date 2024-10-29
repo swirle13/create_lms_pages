@@ -19,7 +19,7 @@ https://oldschool.runescape.wiki/w/Dragon_knife_(Last_Man_Standing)
 |id = 27157
 }}
 [[File:Dragon knife (Unpoisoned) (Last Man Standing) detail.png|160px|left]]
-'''Dragon knife''' from [[Last Man Standing]] is a minigame-exclusive variant of the normal [[Dragon knife (Unpoisoned) (Last Man Standing)]]. It can be obtained from opening the [[Chest (Last Man Standing)|chests]] with a [[bloody key]], or looting the [[Crate (Last Man Standing)|crates]] that spawn at random locations on the map. It is dropped on death to whoever killed you.
+'''Dragon knife''' from [[Last Man Standing]] is a minigame-exclusive variant of the normal [[Dragon knife]]. It can be obtained from opening the [[Chest (Last Man Standing)|chests]] with a [[bloody key]], or looting the [[Crate (Last Man Standing)|crates]] that spawn at random locations on the map. It is dropped on death to whoever killed you.
 
 ==Combat stats==
 {{Infobox Bonuses

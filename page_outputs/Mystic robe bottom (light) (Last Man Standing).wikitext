@@ -19,7 +19,7 @@ https://oldschool.runescape.wiki/w/Mystic_robe_bottom_(light)_(Last_Man_Standing
 |id = 27161
 }}
 [[File:Mystic robe bottom (light) (Last Man Standing) detail.png|160px|left]]
-'''Mystic robe bottom (light)''' from [[Last Man Standing]] is a minigame-exclusive variant of the normal [[Mystic robe bottom (light) (Last Man Standing)]]. It can be obtained from opening the [[Chest (Last Man Standing)|chests]] with a [[bloody key]], or looting the [[Crate (Last Man Standing)|crates]] that spawn at random locations on the map. It is dropped on death to whoever killed you.
+'''Mystic robe bottom (light)''' from [[Last Man Standing]] is a minigame-exclusive variant of the normal [[Mystic robe bottom (light)]]. It can be obtained from opening the [[Chest (Last Man Standing)|chests]] with a [[bloody key]], or looting the [[Crate (Last Man Standing)|crates]] that spawn at random locations on the map. It is dropped on death to whoever killed you.
 
 ==Combat stats==
 {{Infobox Bonuses

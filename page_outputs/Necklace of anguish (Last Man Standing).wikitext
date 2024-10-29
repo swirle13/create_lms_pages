@@ -19,7 +19,7 @@ https://oldschool.runescape.wiki/w/Necklace_of_anguish_(Last_Man_Standing)
 |id = 27172
 }}
 [[File:Necklace of anguish (Last Man Standing) detail.png|160px|left]]
-'''Necklace of anguish''' from [[Last Man Standing]] is a minigame-exclusive variant of the normal [[Necklace of anguish (Last Man Standing)]]. It can be obtained from opening the [[Chest (Last Man Standing)|chests]] with a [[bloody key]], or looting the [[Crate (Last Man Standing)|crates]] that spawn at random locations on the map. It is dropped on death to whoever killed you.
+'''Necklace of anguish''' from [[Last Man Standing]] is a minigame-exclusive variant of the normal [[Necklace of anguish]]. It can be obtained from opening the [[Chest (Last Man Standing)|chests]] with a [[bloody key]], or looting the [[Crate (Last Man Standing)|crates]] that spawn at random locations on the map. It is dropped on death to whoever killed you.
 
 ==Combat stats==
 {{Infobox Bonuses

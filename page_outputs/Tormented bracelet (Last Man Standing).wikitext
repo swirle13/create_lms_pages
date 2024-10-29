@@ -19,7 +19,7 @@ https://oldschool.runescape.wiki/w/Tormented_bracelet_(Last_Man_Standing)
 |id = 27171
 }}
 [[File:Tormented bracelet (Last Man Standing) detail.png|160px|left]]
-'''Tormented bracelet''' from [[Last Man Standing]] is a minigame-exclusive variant of the normal [[Tormented bracelet (Last Man Standing)]]. It can be obtained from opening the [[Chest (Last Man Standing)|chests]] with a [[bloody key]], or looting the [[Crate (Last Man Standing)|crates]] that spawn at random locations on the map. It is dropped on death to whoever killed you.
+'''Tormented bracelet''' from [[Last Man Standing]] is a minigame-exclusive variant of the normal [[Tormented bracelet]]. It can be obtained from opening the [[Chest (Last Man Standing)|chests]] with a [[bloody key]], or looting the [[Crate (Last Man Standing)|crates]] that spawn at random locations on the map. It is dropped on death to whoever killed you.
 
 ==Combat stats==
 {{Infobox Bonuses

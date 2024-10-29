@@ -19,7 +19,7 @@ https://oldschool.runescape.wiki/w/Mithril_gloves_(Last_Man_Standing)
 |id = 20581
 }}
 [[File:Mithril gloves (Last Man Standing) detail.png|160px|left]]
-'''Mithril gloves''' from [[Last Man Standing]] is a minigame-exclusive variant of the normal [[Mithril gloves (Last Man Standing)]]. It can be obtained from opening the [[Chest (Last Man Standing)|chests]] with a [[bloody key]], or looting the [[Crate (Last Man Standing)|crates]] that spawn at random locations on the map. It is dropped on death to whoever killed you.
+'''Mithril gloves''' from [[Last Man Standing]] is a minigame-exclusive variant of the normal [[Mithril gloves]]. It can be obtained from opening the [[Chest (Last Man Standing)|chests]] with a [[bloody key]], or looting the [[Crate (Last Man Standing)|crates]] that spawn at random locations on the map. It is dropped on death to whoever killed you.
 
 ==Combat stats==
 {{Infobox Bonuses

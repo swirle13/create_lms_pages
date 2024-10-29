@@ -19,7 +19,7 @@ https://oldschool.runescape.wiki/w/Guthix_halo_(Last_Man_Standing)
 |id = 27163
 }}
 [[File:Guthix halo (Normal) (Last Man Standing) detail.png|160px|left]]
-'''Guthix halo''' from [[Last Man Standing]] is a minigame-exclusive variant of the normal [[Guthix halo (Normal) (Last Man Standing)]]. It can be obtained from opening the [[Chest (Last Man Standing)|chests]] with a [[bloody key]], or looting the [[Crate (Last Man Standing)|crates]] that spawn at random locations on the map. It is dropped on death to whoever killed you.
+'''Guthix halo''' from [[Last Man Standing]] is a minigame-exclusive variant of the normal [[Guthix halo]]. It can be obtained from opening the [[Chest (Last Man Standing)|chests]] with a [[bloody key]], or looting the [[Crate (Last Man Standing)|crates]] that spawn at random locations on the map. It is dropped on death to whoever killed you.
 
 ==Combat stats==
 {{Infobox Bonuses

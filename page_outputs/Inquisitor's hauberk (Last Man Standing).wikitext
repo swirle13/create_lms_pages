@@ -19,7 +19,7 @@ https://oldschool.runescape.wiki/w/Inquisitor's_hauberk_(Last_Man_Standing)
 |id = 27196
 }}
 [[File:Inquisitor's hauberk (Last Man Standing) detail.png|160px|left]]
-'''Inquisitor's hauberk''' from [[Last Man Standing]] is a minigame-exclusive variant of the normal [[Inquisitor's hauberk (Last Man Standing)]]. It can be obtained from opening the [[Chest (Last Man Standing)|chests]] with a [[bloody key]], or looting the [[Crate (Last Man Standing)|crates]] that spawn at random locations on the map. It is dropped on death to whoever killed you.
+'''Inquisitor's hauberk''' from [[Last Man Standing]] is a minigame-exclusive variant of the normal [[Inquisitor's hauberk]]. It can be obtained from opening the [[Chest (Last Man Standing)|chests]] with a [[bloody key]], or looting the [[Crate (Last Man Standing)|crates]] that spawn at random locations on the map. It is dropped on death to whoever killed you.
 
 ==Combat stats==
 {{Infobox Bonuses

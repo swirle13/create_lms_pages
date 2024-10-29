@@ -96,6 +96,7 @@ def create_lms_item(original_item: ItemProperties, lms_item: LmsItem) -> ItemPro
   '''Create a new LMS variant of an item, given an existing ItemProperties obj.'''
   # create separate case for ghostly robe as both top and bottom item.names are "Ghostly robe"
   if "Ghostly robe" in original_item.wiki_name:
+    print(f"Ghostly robe found: {original_item.wiki_name}")
     lms_object = replace(original_item,
                          name=original_item.wiki_name,
                          wiki_name=original_item.wiki_name + " (Last Man Standing)",
@@ -103,13 +104,13 @@ def create_lms_item(original_item: ItemProperties, lms_item: LmsItem) -> ItemPro
                          wiki_url=original_item.wiki_url.split("#", 1)[0] + "_(Last_Man_Standing)",
                          **asdict(lms_item)
                         )
-    
-  lms_object = replace(original_item,
-                       wiki_name=original_item.wiki_name + " (Last Man Standing)",
-                       # Split and remove any subsections from the wiki_url, e.g. Dragon_knife#Unpoisoned -> Dragon_knife
-                       wiki_url=original_item.wiki_url.split("#", 1)[0] + "_(Last_Man_Standing)",
-                       **asdict(lms_item)
-                       )
+  else:
+    lms_object = replace(original_item,
+                         wiki_name=original_item.wiki_name + " (Last Man Standing)",
+                         # Split and remove any subsections from the wiki_url, e.g. Dragon_knife#Unpoisoned -> Dragon_knife
+                         wiki_url=original_item.wiki_url.split("#", 1)[0] + "_(Last_Man_Standing)",
+                         **asdict(lms_item)
+                        )
   return lms_object
 
 

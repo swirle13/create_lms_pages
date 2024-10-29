@@ -19,7 +19,7 @@ https://oldschool.runescape.wiki/w/Zamorak_halo_(Last_Man_Standing)
 |id = 27164
 }}
 [[File:Zamorak halo (Normal) (Last Man Standing) detail.png|160px|left]]
-'''Zamorak halo''' from [[Last Man Standing]] is a minigame-exclusive variant of the normal [[Zamorak halo (Normal) (Last Man Standing)]]. It can be obtained from opening the [[Chest (Last Man Standing)|chests]] with a [[bloody key]], or looting the [[Crate (Last Man Standing)|crates]] that spawn at random locations on the map. It is dropped on death to whoever killed you.
+'''Zamorak halo''' from [[Last Man Standing]] is a minigame-exclusive variant of the normal [[Zamorak halo]]. It can be obtained from opening the [[Chest (Last Man Standing)|chests]] with a [[bloody key]], or looting the [[Crate (Last Man Standing)|crates]] that spawn at random locations on the map. It is dropped on death to whoever killed you.
 
 ==Combat stats==
 {{Infobox Bonuses

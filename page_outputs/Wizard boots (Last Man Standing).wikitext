@@ -19,7 +19,7 @@ https://oldschool.runescape.wiki/w/Wizard_boots_(Last_Man_Standing)
 |id = 27162
 }}
 [[File:Wizard boots (Last Man Standing) detail.png|160px|left]]
-'''Wizard boots''' from [[Last Man Standing]] is a minigame-exclusive variant of the normal [[Wizard boots (Last Man Standing)]]. It can be obtained from opening the [[Chest (Last Man Standing)|chests]] with a [[bloody key]], or looting the [[Crate (Last Man Standing)|crates]] that spawn at random locations on the map. It is dropped on death to whoever killed you.
+'''Wizard boots''' from [[Last Man Standing]] is a minigame-exclusive variant of the normal [[Wizard boots]]. It can be obtained from opening the [[Chest (Last Man Standing)|chests]] with a [[bloody key]], or looting the [[Crate (Last Man Standing)|crates]] that spawn at random locations on the map. It is dropped on death to whoever killed you.
 
 ==Combat stats==
 {{Infobox Bonuses

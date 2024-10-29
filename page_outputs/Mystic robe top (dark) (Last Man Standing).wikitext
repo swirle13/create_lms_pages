@@ -19,7 +19,7 @@ https://oldschool.runescape.wiki/w/Mystic_robe_top_(dark)_(Last_Man_Standing)
 |id = 27158
 }}
 [[File:Mystic robe top (dark) (Last Man Standing) detail.png|160px|left]]
-'''Mystic robe top (dark)''' from [[Last Man Standing]] is a minigame-exclusive variant of the normal [[Mystic robe top (dark) (Last Man Standing)]]. It can be obtained from opening the [[Chest (Last Man Standing)|chests]] with a [[bloody key]], or looting the [[Crate (Last Man Standing)|crates]] that spawn at random locations on the map. It is dropped on death to whoever killed you.
+'''Mystic robe top (dark)''' from [[Last Man Standing]] is a minigame-exclusive variant of the normal [[Mystic robe top (dark)]]. It can be obtained from opening the [[Chest (Last Man Standing)|chests]] with a [[bloody key]], or looting the [[Crate (Last Man Standing)|crates]] that spawn at random locations on the map. It is dropped on death to whoever killed you.
 
 ==Combat stats==
 {{Infobox Bonuses
