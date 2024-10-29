@@ -2,7 +2,7 @@ https://oldschool.runescape.wiki/w/Dragon_scimitar_(Last_Man_Standing)
 {{Infobox Item
 |name = Dragon scimitar
 |image = [[File:Dragon scimitar (Last Man Standing).png]]
-|release = [[04 August]] [[2016]]
+|release = [[4 August]] [[2016]]
 |update = Last Man Standing Beta and Splashing Restrictions  # TODO: Update this
 |members = No
 |quest = No
@@ -48,9 +48,7 @@ https://oldschool.runescape.wiki/w/Dragon_scimitar_(Last_Man_Standing)
 {{CombatStyles|slash_sword|speed=4|attackrange=0}}
 
 ==Special attack==
-# TODO: copy/paste from [[Dragon scimitar]]
-
-==Changes==
+# TODO: copy/paste from [[Dragon scimitar]]==Changes==
 # TODO: Update this
 {{Subject changes header}}
 {{Subject changes

@@ -2,7 +2,7 @@ https://oldschool.runescape.wiki/w/Opal_dragon_bolts_(e)_(Last_Man_Standing)
 {{Infobox Item
 |name = Opal dragon bolts (e)
 |image = [[File:Opal dragon bolts (e) (Last Man Standing).png]]
-|release = [[04 January]] [[2018]]
+|release = [[4 January]] [[2018]]
 |update = Last Man Standing Beta and Splashing Restrictions  # TODO: Update this
 |members = No
 |quest = No
@@ -41,8 +41,6 @@ https://oldschool.runescape.wiki/w/Opal_dragon_bolts_(e)_(Last_Man_Standing)
 |image = [[File:Opal dragon bolts (e) equipped male.png|160px]]
 |altimage = [[File:Opal dragon bolts (e) equipped female.png|160px]]
 }}
-
-
 
 ==Changes==
 # TODO: Update this

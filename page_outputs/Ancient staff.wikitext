@@ -2,7 +2,7 @@ https://oldschool.runescape.wiki/w/Ancient_staff_(Last_Man_Standing)
 {{Infobox Item
 |name = Ancient staff
 |image = [[File:Ancient staff (Last Man Standing).png]]
-|release = [[04 August]] [[2016]]
+|release = [[4 August]] [[2016]]
 |update = Last Man Standing Beta and Splashing Restrictions  # TODO: Update this
 |members = No
 |quest = No
@@ -48,9 +48,7 @@ https://oldschool.runescape.wiki/w/Ancient_staff_(Last_Man_Standing)
 {{CombatStyles|staff|speed=4|attackrange=staff}}
 
 ==Special attack==
-# TODO: copy/paste from [[Ancient staff]]
-
-==Changes==
+# TODO: copy/paste from [[Ancient staff]]==Changes==
 # TODO: Update this
 {{Subject changes header}}
 {{Subject changes

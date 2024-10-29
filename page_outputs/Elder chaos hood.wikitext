@@ -42,8 +42,6 @@ https://oldschool.runescape.wiki/w/Elder_chaos_hood_(Last_Man_Standing)
 |altimage = [[File:Elder chaos hood equipped female.png|160px]]
 }}
 
-
-
 ==Changes==
 # TODO: Update this
 {{Subject changes header}}

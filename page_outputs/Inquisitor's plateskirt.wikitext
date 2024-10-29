@@ -2,7 +2,7 @@ https://oldschool.runescape.wiki/w/Inquisitor's_plateskirt_(Last_Man_Standing)
 {{Infobox Item
 |name = Inquisitor's plateskirt
 |image = [[File:Inquisitor's plateskirt (Last Man Standing).png]]
-|release = [[06 February]] [[2020]]
+|release = [[6 February]] [[2020]]
 |update = Last Man Standing Beta and Splashing Restrictions  # TODO: Update this
 |members = No
 |quest = No
@@ -41,8 +41,6 @@ https://oldschool.runescape.wiki/w/Inquisitor's_plateskirt_(Last_Man_Standing)
 |image = [[File:Inquisitor's plateskirt equipped male.png|160px]]
 |altimage = [[File:Inquisitor's plateskirt equipped female.png|160px]]
 }}
-
-
 
 ==Changes==
 # TODO: Update this

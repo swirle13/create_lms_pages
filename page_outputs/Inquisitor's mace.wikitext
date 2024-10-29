@@ -2,7 +2,7 @@ https://oldschool.runescape.wiki/w/Inquisitor's_mace_(Last_Man_Standing)
 {{Infobox Item
 |name = Inquisitor's mace
 |image = [[File:Inquisitor's mace (Last Man Standing).png]]
-|release = [[06 February]] [[2020]]
+|release = [[6 February]] [[2020]]
 |update = Last Man Standing Beta and Splashing Restrictions  # TODO: Update this
 |members = No
 |quest = No
@@ -48,9 +48,7 @@ https://oldschool.runescape.wiki/w/Inquisitor's_mace_(Last_Man_Standing)
 {{CombatStyles|spiked|speed=4|attackrange=1}}
 
 ==Special attack==
-# TODO: copy/paste from [[Inquisitor's mace]]
-
-==Changes==
+# TODO: copy/paste from [[Inquisitor's mace]]==Changes==
 # TODO: Update this
 {{Subject changes header}}
 {{Subject changes

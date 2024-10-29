@@ -2,7 +2,7 @@ https://oldschool.runescape.wiki/w/Inquisitor's_great_helm_(Last_Man_Standing)
 {{Infobox Item
 |name = Inquisitor's great helm
 |image = [[File:Inquisitor's great helm (Last Man Standing).png]]
-|release = [[06 February]] [[2020]]
+|release = [[6 February]] [[2020]]
 |update = Last Man Standing Beta and Splashing Restrictions  # TODO: Update this
 |members = No
 |quest = No
@@ -41,8 +41,6 @@ https://oldschool.runescape.wiki/w/Inquisitor's_great_helm_(Last_Man_Standing)
 |image = [[File:Inquisitor's great helm equipped male.png|160px]]
 |altimage = [[File:Inquisitor's great helm equipped female.png|160px]]
 }}
-
-
 
 ==Changes==
 # TODO: Update this

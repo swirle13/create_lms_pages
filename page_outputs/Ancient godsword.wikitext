@@ -2,7 +2,7 @@ https://oldschool.runescape.wiki/w/Ancient_godsword_(Last_Man_Standing)
 {{Infobox Item
 |name = Ancient godsword
 |image = [[File:Ancient godsword (Last Man Standing).png]]
-|release = [[05 January]] [[2022]]
+|release = [[5 January]] [[2022]]
 |update = Last Man Standing Beta and Splashing Restrictions  # TODO: Update this
 |members = No
 |quest = No
@@ -48,9 +48,7 @@ https://oldschool.runescape.wiki/w/Ancient_godsword_(Last_Man_Standing)
 {{CombatStyles|2h_sword|speed=6|attackrange=0}}
 
 ==Special attack==
-# TODO: copy/paste from [[Ancient godsword]]
-
-==Changes==
+# TODO: copy/paste from [[Ancient godsword]]==Changes==
 # TODO: Update this
 {{Subject changes header}}
 {{Subject changes

@@ -107,8 +107,7 @@ def convert_date_format(date_str):
   date_obj = datetime.strptime(date_str, '%Y-%m-%d')
 
   # Format the datetime object to the desired format
-  formatted_date = date_obj.strftime('[[%d %B]] [[%Y]]')
-
+  formatted_date = date_obj.strftime('[[%d %B]] [[%Y]]').lstrip("0").replace("[0", "[")
   return formatted_date
 
 

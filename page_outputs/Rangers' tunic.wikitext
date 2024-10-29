@@ -2,7 +2,7 @@ https://oldschool.runescape.wiki/w/Rangers'_tunic_(Last_Man_Standing)
 {{Infobox Item
 |name = Rangers' tunic
 |image = [[File:Rangers' tunic (Last Man Standing).png]]
-|release = [[04 August]] [[2016]]
+|release = [[4 August]] [[2016]]
 |update = Last Man Standing Beta and Splashing Restrictions  # TODO: Update this
 |members = No
 |quest = No
@@ -41,8 +41,6 @@ https://oldschool.runescape.wiki/w/Rangers'_tunic_(Last_Man_Standing)
 |image = [[File:Rangers' tunic equipped male.png|160px]]
 |altimage = [[File:Rangers' tunic equipped female.png|160px]]
 }}
-
-
 
 ==Changes==
 # TODO: Update this

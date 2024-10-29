@@ -2,7 +2,7 @@ https://oldschool.runescape.wiki/w/Zaryte_crossbow_(Last_Man_Standing)
 {{Infobox Item
 |name = Zaryte crossbow
 |image = [[File:Zaryte crossbow (Last Man Standing).png]]
-|release = [[05 January]] [[2022]]
+|release = [[5 January]] [[2022]]
 |update = Last Man Standing Beta and Splashing Restrictions  # TODO: Update this
 |members = No
 |quest = No
@@ -48,9 +48,7 @@ https://oldschool.runescape.wiki/w/Zaryte_crossbow_(Last_Man_Standing)
 {{CombatStyles|crossbow|speed=6|attackrange=9}}
 
 ==Special attack==
-# TODO: copy/paste from [[Zaryte crossbow]]
-
-==Changes==
+# TODO: copy/paste from [[Zaryte crossbow]]==Changes==
 # TODO: Update this
 {{Subject changes header}}
 {{Subject changes

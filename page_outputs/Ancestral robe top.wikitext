@@ -2,7 +2,7 @@ https://oldschool.runescape.wiki/w/Ancestral_robe_top_(Last_Man_Standing)
 {{Infobox Item
 |name = Ancestral robe top
 |image = [[File:Ancestral robe top (Last Man Standing).png]]
-|release = [[05 January]] [[2017]]
+|release = [[5 January]] [[2017]]
 |update = Last Man Standing Beta and Splashing Restrictions  # TODO: Update this
 |members = No
 |quest = No
@@ -41,8 +41,6 @@ https://oldschool.runescape.wiki/w/Ancestral_robe_top_(Last_Man_Standing)
 |image = [[File:Ancestral robe top equipped male.png|160px]]
 |altimage = [[File:Ancestral robe top equipped female.png|160px]]
 }}
-
-
 
 ==Changes==
 # TODO: Update this

@@ -2,7 +2,7 @@ https://oldschool.runescape.wiki/w/Necklace_of_anguish_(Last_Man_Standing)
 {{Infobox Item
 |name = Necklace of anguish
 |image = [[File:Necklace of anguish (Last Man Standing).png]]
-|release = [[04 August]] [[2016]]
+|release = [[4 August]] [[2016]]
 |update = Last Man Standing Beta and Splashing Restrictions  # TODO: Update this
 |members = No
 |quest = No
@@ -41,8 +41,6 @@ https://oldschool.runescape.wiki/w/Necklace_of_anguish_(Last_Man_Standing)
 |image = [[File:Necklace of anguish equipped male.png|160px]]
 |altimage = [[File:Necklace of anguish equipped female.png|160px]]
 }}
-
-
 
 ==Changes==
 # TODO: Update this

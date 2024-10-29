@@ -2,7 +2,7 @@ https://oldschool.runescape.wiki/w/Tome_of_fire#Charged_(Last_Man_Standing)
 {{Infobox Item
 |name = Tome of fire
 |image = [[File:Tome of fire (Last Man Standing).png]]
-|release = [[08 September]] [[2016]]
+|release = [[8 September]] [[2016]]
 |update = Last Man Standing Beta and Splashing Restrictions  # TODO: Update this
 |members = No
 |quest = No
@@ -41,8 +41,6 @@ https://oldschool.runescape.wiki/w/Tome_of_fire#Charged_(Last_Man_Standing)
 |image = [[File:Tome of fire equipped male.png|160px]]
 |altimage = [[File:Tome of fire equipped female.png|160px]]
 }}
-
-
 
 ==Changes==
 # TODO: Update this
