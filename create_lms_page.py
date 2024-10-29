@@ -5,10 +5,12 @@
 #  Collect all items and their data and populate a template, written out to rs_wiki/ppage_outputs/<item_name>.wikitext
 
 from dataclasses import dataclass, asdict, replace
+from datetime import datetime
 from pprint import pprint, pformat
 from pprint import PrettyPrinter
 from typing import Optional
 
+from jinja2 import Environment, FileSystemLoader
 from osrsreboxed import items_api
 from osrsreboxed.items_api.item_properties import ItemProperties
 from osrsreboxed.items_api.all_items import AllItems
@@ -63,7 +65,16 @@ def get_only_attr(obj: ItemProperties | list[ItemProperties], attr: str):
     return getattr(obj, attr)
 
 
-def compare_items(id1: int, id2: int, items: AllItems):
+def get_all_matching_items(items: AllItems, lms_item_names: list[str]) -> list[ItemProperties]:
+  '''Get list of all items with name match to lms_item_names list'''
+  lms_items = [x for x in items if x.name in lms_item_names]
+  print("Number of lms items returned: ", len(lms_items))
+  print_only_attr(lms_items, "name")
+  pprinter.pprint(lms_items)
+  return lms_items
+
+
+def compare_items_by_id(id1: int, id2: int, items: AllItems):
   item1 = items.lookup_by_item_id(id1)
   item2 = items.lookup_by_item_id(id2)
   dict1 = asdict(item1)
@@ -73,11 +84,12 @@ def compare_items(id1: int, id2: int, items: AllItems):
   pprinter.pprint(differences)
 
 
-def fetch_stats(name: str) -> ItemProperties:
-  '''Fetches stats for non-LMS version of LMS item, given a name.
-  Returns an ItemProperties object.
-  '''
-  print()
+def compare_items(item1: ItemProperties, item2: ItemProperties, items: AllItems):
+  dict1 = asdict(item1)
+  dict2 = asdict(item2)
+  differences = {key: (dict1[key], dict2[key])
+                 for key in dict1 if dict1[key] != dict2[key]}
+  pprinter.pprint(differences)
 
 
 def create_lms_item(original_item: ItemProperties, lms_item: LmsItem) -> ItemProperties:
@@ -86,14 +98,50 @@ def create_lms_item(original_item: ItemProperties, lms_item: LmsItem) -> ItemPro
                        wiki_name=original_item.wiki_name + " (Last Man Standing)",
                        wiki_url=original_item.wiki_url + "_(Last_Man_Standing)",
                        **asdict(lms_item)
-                      )
+                       )
   return lms_object
+
+
+def convert_date_format(date_str):
+    # Convert the string to a datetime object
+  date_obj = datetime.strptime(date_str, '%Y-%m-%d')
+
+  # Format the datetime object to the desired format
+  formatted_date = date_obj.strftime('[[%d %B]] [[%Y]]')
+
+  return formatted_date
 
 
 def create_template(item: ItemProperties):
   '''Create wikitext page by populating lms_wikitext_template.wikitext.j2 template.
   Created files will be created at ./page_outputs/{item_name}.wikitext'''
-  print()
+  env = Environment(loader=FileSystemLoader('./templates'))
+  template = env.get_template('lms_wikitext_template.wikitext.j2')
+  item_dict = asdict(item)
+
+  # check if weapon, create attack range key/value
+  if item.weapon:
+    item_range = 0
+    if item.weapon.weapon_type in ["2h sword", "axe", "blaster", "bludgeon", "blunt", "claw", "pickaxe", "polearm", "polestaff", "powered staff", "scythe", "slash sword", "spear", "spiked", "stab sword", "whip"]:
+      item_range = 1
+    if item.weapon.weapon_type in ["bow", "crossbow"]:
+      item_range = 9
+    if item.weapon.weapon_type == "thrown":
+      item_range = 4
+    if item.weapon.weapon_type == "staff":
+      item_range = "staff"
+    item_dict["attack_range"] = item_range
+
+  # update item.release_date for wikitext formatting
+  # check if release_date is older than 4 August 2016, if so, replace release date with 4 August 2016, as that is the date LMS released
+  if item.release_date < "2016-08-04":
+    print(f"{item.release_date} is before 4 August 2016")
+    item_dict["release_date"] = "2016-08-04"
+  item_dict["release_date"] = convert_date_format(item_dict["release_date"])
+
+  output = template.render(item=item_dict)
+  with open(f"./page_outputs/{item.name}.wikitext", "w") as f:
+    f.write(output)
 
 
 lms_item_names = [
@@ -243,7 +291,6 @@ lms_item_names = [
 
 # all items will have a `wiki_name` equal to the item name plus (Last Man Standing)
 # and same for `wiki_url`
-# TODO: get noted id for items
 lms_items_without_wiki_page = {
     '3rd age mage hat': {
         'buy_limit': None,
@@ -752,7 +799,7 @@ lms_items_without_wiki_page = {
         'tradeable': False,  # double check this
         'tradeable_on_ge': False
     },
-    'Spiked mancles': {
+    'Spiked manacles': {
         'buy_limit': None,
         'cost': 10,
         'highalch': 0,
@@ -860,50 +907,37 @@ lms_items_without_wiki_page = {
 
 items = items_api.load()
 
+# compare_items(23605, 21795, items)  # imbued zammy cape
+# compare_items(9243, 23649, items)   # diamond bolts (e)
+# compare_items(7462, 23593, items)   # barrows gloves
 
-test_items = [item for item in items if getattr(item, "id") and getattr(item, "id") in [21795, 23605]]
-# print_only_attr(test_item, "wiki_name")
-# pprinter.pprint(test_items)
+# pprinter.pprint(items.lookup_by_item_name('Spiked manacles'))
 
-compare_items(23605, 21795, items)  # imbued zammy cape
-compare_items(9243, 23649, items)   # diamond bolts (e)
-compare_items(7462, 23593, items)   # barrows gloves
+# cut this list down to only the normal version of each item and store in lms_items
+get_all_matching_items(items, lms_item_names)
 
-pprinter.pprint(asdict(items.lookup_by_item_id(23594)))
+# Get list of all existing wiki pages for LMS items
+lms_wiki_pages = [x for x in items if getattr(x, "wiki_name", "") and
+                  "Last Man Standing" in getattr(x, "wiki_name", "") and
+                  x.duplicate == False]
+print("Number of lms items with wiki pages: ", len(lms_wiki_pages))
+# pprinter.pprint(lms_wiki_pages)
+# print_only_attr(lms_wiki_pages, "name")
 
-# Get list of all items with name match to lms_item_names list
-# lms_items = [x for x in items if x.name in lms_item_names]
-# print("Number of lms items returned: ", len(lms_items))
-# print_only_attr(lms_items, "name")
-# pprinter.pprint(lms_items)
+lms_item_names_with_wiki_pages = get_only_attr(lms_wiki_pages, "name")
+missing_lms_wiki_pages = sorted([item for item in lms_item_names if item not in lms_item_names_with_wiki_pages])
+# store missing_lms_wiki_pages as a dict above, L294
+print("Number of lms items without wiki pages: ", len(missing_lms_wiki_pages))
+print("lms items without wiki pages:\n", pformat(missing_lms_wiki_pages))
 
-# # Get list of all existing wiki pages for LMS items
-# lms_wiki_pages = [x for x in items if getattr(x, "wiki_name", "") and
-#                   "Last Man Standing" in getattr(x, "wiki_name", "") and
-#                   x.duplicate == False]
-# print("Number of lms items with wiki pages: ", len(lms_wiki_pages))
-# # pprinter.pprint(lms_wiki_pages)
-# # print_only_attr(lms_wiki_pages, "name")
-
-# lms_item_names_with_wiki_pages = get_only_attr(lms_wiki_pages, "name")
-# missing_lms_wiki_pages = sorted([item for item in lms_item_names if item not in lms_item_names_with_wiki_pages])
-# print("Number of lms items without wiki pages: ", len(missing_lms_wiki_pages))
-# print("lms items without wiki pages:\n", pformat(missing_lms_wiki_pages))
-
-
-# Create new LMS items
-# get 3rd age mage hat item
-third_age_mage_hat = items.lookup_by_item_id(10342)
-# create lmsitem object for 3rd age mage hat
-lms_third_age_mage_hat = LmsItem(**lms_items_without_wiki_page["3rd age mage hat"])
-
-# create ItemProperties of "3rd age mage hat" for lms version
-fixed_third_age_mage_hat = create_lms_item(third_age_mage_hat, lms_third_age_mage_hat)
-pprinter.pprint(fixed_third_age_mage_hat)
-
-dict1 = asdict(third_age_mage_hat)
-dict2 = asdict(fixed_third_age_mage_hat)
-differences = {key: (dict1[key], dict2[key])
-                 for key in dict1 if dict1[key] != dict2[key]}
-
-pprinter.pprint(differences)
+for name, data in lms_items_without_wiki_page.items():
+  print(name)
+  temp = LmsItem(**data)
+  
+  # enable wiki name for ghostly robe top because of name collision with ghostly robe bottoms
+  if name == "Ghostly robe (top)":
+    original_item = items.lookup_by_item_name(name, True)
+  else:
+    original_item = items.lookup_by_item_name(name)
+  lms_item = create_lms_item(original_item, temp)
+  create_template(lms_item)

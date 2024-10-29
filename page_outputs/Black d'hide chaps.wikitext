@@ -1,0 +1,56 @@
+{{Infobox Item
+|name = Black d'hide chaps
+|image = [[File:Black d'hide chaps (Last Man Standing).png]]
+|release = [[04 August]] [[2016]]
+|update = Last Man Standing Beta and Splashing Restrictions  # TODO: Update this
+|members = No
+|quest = No
+|tradeable = No
+|placeholder = No
+|equipable = Yes
+|stackable = No
+|noteable = Yes
+|options = Wield, Drop   # TODO: Update this
+|examine = Made from 100% real dragonhide.
+|value = 30
+|alchable = No
+|weight = 5.443
+|id = 20424
+}}
+[[File:Black d'hide chaps (Last Man Standing) detail.png|160px|left]]
+'''Black d'hide chaps''' from [[Last Man Standing]] is a minigame-exclusive variant of the normal [[Black d'hide chaps]]. It can be obtained from opening the [[Chest (Last Man Standing)|chests]] with a [[bloody key]], or looting the [[Crate (Last Man Standing)|crates]] that spawn at random locations on the map. It is dropped on death to whoever killed you.
+
+==Combat stats==
+{{Infobox Bonuses
+|astab = 0
+|aslash = 0
+|acrush = 0
+|amagic = -10
+|arange = 17
+|dstab = 18
+|dslash = 20
+|dcrush = 26
+|dmagic = 23
+|drange = 26
+|str = 0
+|rstr = 0
+|mdmg = 0
+|prayer = 0
+|slot = legs
+|image = [[File:Black d'hide chaps equipped male.png|160px]]
+|altimage = [[File:Black d'hide chaps equipped female.png|160px]]
+}}
+
+
+
+==Changes==
+# TODO: Update this
+{{Subject changes header}}
+{{Subject changes
+|date = 4 August 2016
+|update = Last Man Standing
+|change = The item was made fully available with the release of Last Man Standing.
+}}
+{{Subject changes footer}}
+
+{{Last Man Standing In-game Items}}

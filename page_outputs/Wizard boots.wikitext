@@ -1,0 +1,56 @@
+{{Infobox Item
+|name = Wizard boots
+|image = [[File:Wizard boots (Last Man Standing).png]]
+|release = [[04 August]] [[2016]]
+|update = Last Man Standing Beta and Splashing Restrictions  # TODO: Update this
+|members = No
+|quest = No
+|tradeable = No
+|placeholder = No
+|equipable = Yes
+|stackable = No
+|noteable = Yes
+|options = Wield, Drop   # TODO: Update this
+|examine = Slightly magical boots.
+|value = 5
+|alchable = No
+|weight = 0.283
+|id = 27162
+}}
+[[File:Wizard boots (Last Man Standing) detail.png|160px|left]]
+'''Wizard boots''' from [[Last Man Standing]] is a minigame-exclusive variant of the normal [[Wizard boots]]. It can be obtained from opening the [[Chest (Last Man Standing)|chests]] with a [[bloody key]], or looting the [[Crate (Last Man Standing)|crates]] that spawn at random locations on the map. It is dropped on death to whoever killed you.
+
+==Combat stats==
+{{Infobox Bonuses
+|astab = 0
+|aslash = 0
+|acrush = 0
+|amagic = 4
+|arange = 0
+|dstab = 0
+|dslash = 0
+|dcrush = 0
+|dmagic = 4
+|drange = 0
+|str = 0
+|rstr = 0
+|mdmg = 0
+|prayer = 0
+|slot = feet
+|image = [[File:Wizard boots equipped male.png|160px]]
+|altimage = [[File:Wizard boots equipped female.png|160px]]
+}}
+
+
+
+==Changes==
+# TODO: Update this
+{{Subject changes header}}
+{{Subject changes
+|date = 4 August 2016
+|update = Last Man Standing
+|change = The item was made fully available with the release of Last Man Standing.
+}}
+{{Subject changes footer}}
+
+{{Last Man Standing In-game Items}}

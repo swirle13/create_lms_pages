@@ -1,0 +1,56 @@
+{{Infobox Item
+|name = Fremennik kilt
+|image = [[File:Fremennik kilt (Last Man Standing).png]]
+|release = [[11 April]] [[2019]]
+|update = Last Man Standing Beta and Splashing Restrictions  # TODO: Update this
+|members = No
+|quest = No
+|tradeable = No
+|placeholder = No
+|equipable = Yes
+|stackable = No
+|noteable = Yes
+|options = Wield, Drop   # TODO: Update this
+|examine = A kilt worn by the mightiest of Fremennik warriors.
+|value = 10
+|alchable = No
+|weight = 3.0
+|id = 27177
+}}
+[[File:Fremennik kilt (Last Man Standing) detail.png|160px|left]]
+'''Fremennik kilt''' from [[Last Man Standing]] is a minigame-exclusive variant of the normal [[Fremennik kilt]]. It can be obtained from opening the [[Chest (Last Man Standing)|chests]] with a [[bloody key]], or looting the [[Crate (Last Man Standing)|crates]] that spawn at random locations on the map. It is dropped on death to whoever killed you.
+
+==Combat stats==
+{{Infobox Bonuses
+|astab = 0
+|aslash = 0
+|acrush = 0
+|amagic = -21
+|arange = -7
+|dstab = 11
+|dslash = 10
+|dcrush = 10
+|dmagic = -4
+|drange = 10
+|str = 1
+|rstr = 0
+|mdmg = 0
+|prayer = 0
+|slot = legs
+|image = [[File:Fremennik kilt equipped male.png|160px]]
+|altimage = [[File:Fremennik kilt equipped female.png|160px]]
+}}
+
+
+
+==Changes==
+# TODO: Update this
+{{Subject changes header}}
+{{Subject changes
+|date = 4 August 2016
+|update = Last Man Standing
+|change = The item was made fully available with the release of Last Man Standing.
+}}
+{{Subject changes footer}}
+
+{{Last Man Standing In-game Items}}

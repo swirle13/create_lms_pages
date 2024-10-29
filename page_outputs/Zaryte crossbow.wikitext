@@ -1,0 +1,62 @@
+{{Infobox Item
+|name = Zaryte crossbow
+|image = [[File:Zaryte crossbow (Last Man Standing).png]]
+|release = [[05 January]] [[2022]]
+|update = Last Man Standing Beta and Splashing Restrictions  # TODO: Update this
+|members = No
+|quest = No
+|tradeable = No
+|placeholder = No
+|equipable = Yes
+|stackable = No
+|noteable = Yes
+|options = Wield, Drop   # TODO: Update this
+|examine = A weapon born out of conflict.
+|value = 40
+|alchable = No
+|weight = 6.001
+|id = 27186
+}}
+[[File:Zaryte crossbow (Last Man Standing) detail.png|160px|left]]
+'''Zaryte crossbow''' from [[Last Man Standing]] is a minigame-exclusive variant of the normal [[Zaryte crossbow]]. It can be obtained from opening the [[Chest (Last Man Standing)|chests]] with a [[bloody key]], or looting the [[Crate (Last Man Standing)|crates]] that spawn at random locations on the map. It is dropped on death to whoever killed you.
+
+==Combat stats==
+{{Infobox Bonuses
+|astab = 0
+|aslash = 0
+|acrush = 0
+|amagic = 0
+|arange = 110
+|dstab = 14
+|dslash = 14
+|dcrush = 12
+|dmagic = 15
+|drange = 16
+|str = 0
+|rstr = 0
+|mdmg = 0
+|prayer = 1
+|slot = weapon
+|speed = 6
+|attackrange = 9
+|combatstyle = crossbow
+|image = [[File:Zaryte crossbow equipped male.png|160px]]
+|altimage = [[File:Zaryte crossbow equipped female.png|160px]]
+}}
+
+{{CombatStyles|crossbow|speed=6|attackrange=9}}
+
+==Special attack==
+# TODO: copy/paste from [[Zaryte crossbow]]
+
+==Changes==
+# TODO: Update this
+{{Subject changes header}}
+{{Subject changes
+|date = 4 August 2016
+|update = Last Man Standing
+|change = The item was made fully available with the release of Last Man Standing.
+}}
+{{Subject changes footer}}
+
+{{Last Man Standing In-game Items}}

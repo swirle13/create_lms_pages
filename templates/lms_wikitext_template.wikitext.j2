@@ -1,0 +1,68 @@
+{{ '{{Infobox Item' }}
+|name = {{ item.name }}
+|image = [[File:{{ item.name }} (Last Man Standing).png]]
+|release = {{ item.release_date }}
+|update = Last Man Standing Beta and Splashing Restrictions  # TODO: Update this
+|members = No
+|quest = No
+|tradeable = No
+|placeholder = No
+|equipable = Yes
+|stackable = No
+|noteable = Yes
+|options = Wield, Drop   # TODO: Update this
+|examine = {{ item.examine }}
+|value = {{ item.cost }}
+|alchable = No
+|weight = {{ item.weight }}
+|id = {{ item.id }}
+{{ '}}' }}
+[[File:{{ item.name }} (Last Man Standing) detail.png|160px|left]]
+'''{{ item.name }}''' from [[Last Man Standing]] is a minigame-exclusive variant of the normal [[{{ item.name }}]]. It can be obtained from opening the [[Chest (Last Man Standing)|chests]] with a [[bloody key]], or looting the [[Crate (Last Man Standing)|crates]] that spawn at random locations on the map. It is dropped on death to whoever killed you.
+
+==Combat stats==
+{{'{{Infobox Bonuses'}}
+|astab = {{ item.equipment.attack_stab }}
+|aslash = {{ item.equipment.attack_slash }}
+|acrush = {{ item.equipment.attack_crush }}
+|amagic = {{ item.equipment.attack_magic }}
+|arange = {{ item.equipment.attack_ranged }}
+|dstab = {{ item.equipment.defence_stab }}
+|dslash = {{ item.equipment.defence_slash }}
+|dcrush = {{ item.equipment.defence_crush }}
+|dmagic = {{ item.equipment.defence_magic }}
+|drange = {{ item.equipment.defence_ranged }}
+|str = {{ item.equipment.melee_strength }}
+|rstr = {{ item.equipment.ranged_strength }}
+|mdmg = {{ item.equipment.magic_damage }}
+|prayer = {{ item.equipment.prayer }}
+|slot = {{ item.equipment.slot }}
+{%- if item.weapon %}
+|speed = {{ item.weapon.attack_speed }}
+|attackrange = {{ item.attack_range }}
+|combatstyle = {{ item.weapon.weapon_type }}
+{%- endif %}
+|image = [[File:{{ item.name }} equipped male.png|160px]]
+|altimage = [[File:{{ item.name }} equipped female.png|160px]]
+{{ '}}' }}
+
+{% if item.weapon -%}
+{{ '{{CombatStyles|' }}{{ item.weapon.weapon_type }}{{ '|speed=' }}{{ item.weapon.attack_speed }}{{ '|attackrange=' }}{{ item.attack_range }}{{ '}}' }}
+
+==Special attack==
+# TODO: copy/paste from [[{{ item.name }}]]
+{%- endif %}
+
+==Changes==
+{%- raw %}
+# TODO: Update this
+{{Subject changes header}}
+{{Subject changes
+|date = 4 August 2016
+|update = Last Man Standing
+|change = The item was made fully available with the release of Last Man Standing.
+}}
+{{Subject changes footer}}
+
+{{Last Man Standing In-game Items}}
+{%- endraw %}
