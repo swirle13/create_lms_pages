@@ -121,7 +121,7 @@ def create_template(item: ItemProperties):
   # check if weapon, create attack range key/value
   if item.weapon:
     item_range = 0
-    if item.weapon.weapon_type in ["2h sword", "2h_sword", "axe", "blaster", "bludgeon", "blunt", "claw", "pickaxe", "polearm", "polestaff", "powered staff", "scythe", "slash sword", "spear", "spiked", "stab sword", "whip"]:
+    if item.weapon.weapon_type in ["2h_sword", "axe", "blaster", "bludgeon", "blunt", "claw", "pickaxe", "polearm", "polestaff", "powered staff", "scythe", "slash_sword", "spear", "spiked", "stab sword", "whip"]:
       item_range = 1
     if item.weapon.weapon_type in ["bow", "crossbow"]:
       item_range = 9
