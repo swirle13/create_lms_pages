@@ -1,3 +1,4 @@
+https://oldschool.runescape.wiki/w/Amulet_of_torture_(Last_Man_Standing)
 {{Infobox Item
 |name = Amulet of torture
 |image = [[File:Amulet of torture (Last Man Standing).png]]

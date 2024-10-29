@@ -1,3 +1,4 @@
+https://oldschool.runescape.wiki/w/Unholy_book_(Last_Man_Standing)
 {{Infobox Item
 |name = Unholy book
 |image = [[File:Unholy book (Last Man Standing).png]]

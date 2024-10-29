@@ -1,3 +1,4 @@
+https://oldschool.runescape.wiki/w/Dragon_scimitar_(Last_Man_Standing)
 {{Infobox Item
 |name = Dragon scimitar
 |image = [[File:Dragon scimitar (Last Man Standing).png]]

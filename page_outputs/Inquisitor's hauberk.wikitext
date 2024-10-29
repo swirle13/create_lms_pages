@@ -1,3 +1,4 @@
+https://oldschool.runescape.wiki/w/Inquisitor's_hauberk_(Last_Man_Standing)
 {{Infobox Item
 |name = Inquisitor's hauberk
 |image = [[File:Inquisitor's hauberk (Last Man Standing).png]]

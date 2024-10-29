@@ -1,3 +1,4 @@
+https://oldschool.runescape.wiki/w/Mithril_gloves_(Last_Man_Standing)
 {{Infobox Item
 |name = Mithril gloves
 |image = [[File:Mithril gloves (Last Man Standing).png]]

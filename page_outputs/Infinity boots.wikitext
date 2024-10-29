@@ -1,3 +1,4 @@
+https://oldschool.runescape.wiki/w/Infinity_boots_(Last_Man_Standing)
 {{Infobox Item
 |name = Infinity boots
 |image = [[File:Infinity boots (Last Man Standing).png]]

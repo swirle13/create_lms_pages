@@ -1,3 +1,4 @@
+https://oldschool.runescape.wiki/w/Tormented_bracelet_(Last_Man_Standing)
 {{Infobox Item
 |name = Tormented bracelet
 |image = [[File:Tormented bracelet (Last Man Standing).png]]

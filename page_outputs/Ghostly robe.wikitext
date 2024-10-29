@@ -1,3 +1,4 @@
+https://oldschool.runescape.wiki/w/Ghostly_robe_(top)_(Last_Man_Standing)
 {{Infobox Item
 |name = Ghostly robe
 |image = [[File:Ghostly robe (Last Man Standing).png]]

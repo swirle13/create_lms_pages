@@ -1,3 +1,4 @@
+https://oldschool.runescape.wiki/w/Rune_defender#Normal_(Last_Man_Standing)
 {{Infobox Item
 |name = Rune defender
 |image = [[File:Rune defender (Last Man Standing).png]]

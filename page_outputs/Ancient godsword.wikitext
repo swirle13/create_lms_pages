@@ -1,3 +1,4 @@
+https://oldschool.runescape.wiki/w/Ancient_godsword_(Last_Man_Standing)
 {{Infobox Item
 |name = Ancient godsword
 |image = [[File:Ancient godsword (Last Man Standing).png]]

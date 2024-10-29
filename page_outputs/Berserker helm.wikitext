@@ -1,3 +1,4 @@
+https://oldschool.runescape.wiki/w/Berserker_helm_(Last_Man_Standing)
 {{Infobox Item
 |name = Berserker helm
 |image = [[File:Berserker helm (Last Man Standing).png]]

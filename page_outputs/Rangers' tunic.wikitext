@@ -1,3 +1,4 @@
+https://oldschool.runescape.wiki/w/Rangers'_tunic_(Last_Man_Standing)
 {{Infobox Item
 |name = Rangers' tunic
 |image = [[File:Rangers' tunic (Last Man Standing).png]]

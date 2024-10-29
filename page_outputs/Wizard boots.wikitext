@@ -1,3 +1,4 @@
+https://oldschool.runescape.wiki/w/Wizard_boots_(Last_Man_Standing)
 {{Infobox Item
 |name = Wizard boots
 |image = [[File:Wizard boots (Last Man Standing).png]]

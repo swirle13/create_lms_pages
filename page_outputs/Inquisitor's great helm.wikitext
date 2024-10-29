@@ -1,3 +1,4 @@
+https://oldschool.runescape.wiki/w/Inquisitor's_great_helm_(Last_Man_Standing)
 {{Infobox Item
 |name = Inquisitor's great helm
 |image = [[File:Inquisitor's great helm (Last Man Standing).png]]

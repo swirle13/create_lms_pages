@@ -1,3 +1,4 @@
+https://oldschool.runescape.wiki/w/Ancient_staff_(Last_Man_Standing)
 {{Infobox Item
 |name = Ancient staff
 |image = [[File:Ancient staff (Last Man Standing).png]]
