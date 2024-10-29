@@ -1,4 +1,4 @@
-https://oldschool.runescape.wiki/w/Dragon_knife#Unpoisoned_(Last_Man_Standing)
+https://oldschool.runescape.wiki/w/Dragon_knife_(Last_Man_Standing)
 {{Infobox Item
 |name = Dragon knife
 |image = [[File:Dragon knife (Last Man Standing).png]]

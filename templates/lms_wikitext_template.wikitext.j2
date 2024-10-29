@@ -41,14 +41,14 @@
 {%- if item.weapon %}
 |speed = {{ item.weapon.attack_speed }}
 |attackrange = {{ item.attack_range }}
-|combatstyle = {{ item.weapon.weapon_type }}
+|combatstyle = {{ item.weapon.weapon_type.replace("_", " ") }}
 {%- endif %}
 |image = [[File:{{ item.name }} equipped male.png|160px]]
 |altimage = [[File:{{ item.name }} equipped female.png|160px]]
 {{ '}}' }}
 {%- if item.weapon %}
 
-{{ '{{CombatStyles|' }}{{ item.weapon.weapon_type }}{{ '|speed=' }}{{ item.weapon.attack_speed }}{{ '|attackrange=' }}{{ item.attack_range }}{{ '}}' }}
+{{ '{{CombatStyles|' }}{{ item.weapon.weapon_type.replace("_", " ") }}{{ '|speed=' }}{{ item.weapon.attack_speed }}{{ '|attackrange=' }}{{ item.attack_range }}{{ '}}' }}
 
 ==Special attack==
 # TODO: copy/paste from [[{{ item.name }}]]

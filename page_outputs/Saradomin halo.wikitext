@@ -1,4 +1,4 @@
-https://oldschool.runescape.wiki/w/Saradomin_halo#Normal_(Last_Man_Standing)
+https://oldschool.runescape.wiki/w/Saradomin_halo_(Last_Man_Standing)
 {{Infobox Item
 |name = Saradomin halo
 |image = [[File:Saradomin halo (Last Man Standing).png]]

@@ -96,14 +96,15 @@ def create_lms_item(original_item: ItemProperties, lms_item: LmsItem) -> ItemPro
   '''Create a new LMS variant of an item, given an existing ItemProperties obj.'''
   lms_object = replace(original_item,
                        wiki_name=original_item.wiki_name + " (Last Man Standing)",
-                       wiki_url=original_item.wiki_url + "_(Last_Man_Standing)",
+                       # Split and remove any subsections from the wiki_url, e.g. Dragon_knife#Unpoisoned -> Dragon_knife
+                       wiki_url=original_item.wiki_url.split("#", 1)[0] + "_(Last_Man_Standing)",
                        **asdict(lms_item)
                        )
   return lms_object
 
 
 def convert_date_format(date_str):
-    # Convert the string to a datetime object
+  # Convert the string to a datetime object
   date_obj = datetime.strptime(date_str, '%Y-%m-%d')
 
   # Format the datetime object to the desired format
@@ -163,7 +164,7 @@ lms_item_names = [
     "Granite maul",
     "Heavy ballista",
     "Infernal cape",
-    "Inquisitor's mace",      # 27198
+    "Inquisitor's mace",
     "Kodai wand",
     "Mage's book",
     "Occult necklace",
@@ -228,7 +229,7 @@ lms_item_names = [
     "Eclipse moon helm",
     "Eclipse moon chestplate",
     "Eclipse moon tassets",
-    "Dragon knives",
+    "Dragon knife",
     "Light ballista",
     "Blessed dragonhide chaps",
     "Elder chaos hood",
@@ -247,28 +248,28 @@ lms_item_names = [
     "Wizard boots",
     ##### Stock items #####
     # helm slot
-    "Helm of neitiznot",    # 23591
-    "Berserker helm",       # 27169
-    "Ghostly hood",         # 27166
+    "Helm of neitiznot",
+    "Berserker helm",
+    "Ghostly hood",
     # cape slot
     "Imbued guthix cape",
     "Imbued saradomin cape",
     "Imbued zamorak cape",
     # ammy slot
-    "Amulet of glory",      # 20586
+    "Amulet of glory",
     "Occult necklace",
     # ammo slot
     "Diamond bolts (e)",
     # weapon slot
     "Abyssal whip",
-    "Ahrim's staff",        # 23653
+    "Ahrim's staff",
     "Ancient staff",
     "Dragon dagger",
     "Dragon scimitar",
     "Rune crossbow",
     # body slot
     "Black d'hide body",
-    "Ghostly robe (top)",   # 27167
+    "Ghostly robe (top)",
     "Mystic robe top",
     "Mystic robe top (dark)",
     "Mystic robe top (light)",
@@ -291,7 +292,7 @@ lms_item_names = [
     # boot slot
     "Climbing boots",
     # ring slot
-    "Berserker ring"        # 23595
+    "Berserker ring"
 ]
 
 # all items will have a `wiki_name` equal to the item name plus (Last Man Standing)
@@ -919,7 +920,8 @@ items = items_api.load()
 # pprinter.pprint(items.lookup_by_item_name('Spiked manacles'))
 
 # cut this list down to only the normal version of each item and store in lms_items
-get_all_matching_items(items, lms_item_names)
+# get_all_matching_items(items, lms_item_names)
+# pprinter.pprint(items.lookup_by_item_name("Dragon knife"))
 
 # Get list of all existing wiki pages for LMS items
 lms_wiki_pages = [x for x in items if getattr(x, "wiki_name", "") and
@@ -929,11 +931,11 @@ print("Number of lms items with wiki pages: ", len(lms_wiki_pages))
 # pprinter.pprint(lms_wiki_pages)
 # print_only_attr(lms_wiki_pages, "name")
 
+# store missing_lms_wiki_pages as a dict above, lms_items_without_wiki_page
 lms_item_names_with_wiki_pages = get_only_attr(lms_wiki_pages, "name")
 missing_lms_wiki_pages = sorted([item for item in lms_item_names if item not in lms_item_names_with_wiki_pages])
-# store missing_lms_wiki_pages as a dict above, L294
-print("Number of lms items without wiki pages: ", len(missing_lms_wiki_pages))
-print("lms items without wiki pages:\n", pformat(missing_lms_wiki_pages))
+# print("Number of lms items without wiki pages: ", len(missing_lms_wiki_pages))
+# print("lms items without wiki pages:\n", pformat(missing_lms_wiki_pages))
 
 for name, data in lms_items_without_wiki_page.items():
   print(name)

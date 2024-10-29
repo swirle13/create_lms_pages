@@ -40,12 +40,12 @@ https://oldschool.runescape.wiki/w/Dragon_scimitar_(Last_Man_Standing)
 |slot = weapon
 |speed = 4
 |attackrange = 1
-|combatstyle = slash_sword
+|combatstyle = slash sword
 |image = [[File:Dragon scimitar equipped male.png|160px]]
 |altimage = [[File:Dragon scimitar equipped female.png|160px]]
 }}
 
-{{CombatStyles|slash_sword|speed=4|attackrange=1}}
+{{CombatStyles|slash sword|speed=4|attackrange=1}}
 
 ==Special attack==
 # TODO: copy/paste from [[Dragon scimitar]]
