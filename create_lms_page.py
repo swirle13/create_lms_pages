@@ -135,8 +135,10 @@ def create_template(item: ItemProperties):
     item_range = 0
     if item.weapon.weapon_type in ["2h_sword", "axe", "blaster", "bludgeon", "blunt", "claw", "pickaxe", "polearm", "polestaff", "powered staff", "scythe", "slash_sword", "spear", "spiked", "stab sword", "whip"]:
       item_range = 1
-    if item.weapon.weapon_type in ["bow", "crossbow"]:
-      item_range = 9
+    if item.weapon.weapon_type in ["bow"]:
+      item_range = 10
+    if item.weapon.weapon_type in ["crossbow"]:
+      item_range = 8  # zaryte crossbow
     if item.weapon.weapon_type == "thrown":
       item_range = 4
     if item.weapon.weapon_type == "staff":

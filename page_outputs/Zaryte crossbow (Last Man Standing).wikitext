@@ -39,13 +39,13 @@ https://oldschool.runescape.wiki/w/Zaryte_crossbow_(Last_Man_Standing)
 |prayer = 1
 |slot = weapon
 |speed = 6
-|attackrange = 9
+|attackrange = 8
 |combatstyle = crossbow
 |image = [[File:Zaryte crossbow (Last Man Standing) equipped male.png|160px]]
 |altimage = [[File:Zaryte crossbow (Last Man Standing) equipped female.png|160px]]
 }}
 
-{{CombatStyles|crossbow|speed=6|attackrange=9}}
+{{CombatStyles|crossbow|speed=6|attackrange=8}}
 
 ==Special attack==
 # TODO: copy/paste from [[Zaryte crossbow]]
